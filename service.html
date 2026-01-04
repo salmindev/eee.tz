@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Horizontal Collapse Hover</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .image-hover-wrapper {
+            height: 70vh;
+            overflow: hidden;
+        }
+
+        .hover-item {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            transition: flex 0.6s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hover-item::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .hover-item:hover {
+            flex: 4;
+        }
+
+        .hover-item:hover .hover-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hover-content {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            color: #fff;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.4s ease;
+        }
+
+        .hover-content h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body class="p-5">
+
+    <section class="container-fluid p-0">
+        <div class="image-hover-wrapper d-flex">
+
+            <div class="hover-item active"
+                style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');">
+                <div class="hover-content">
+                    <span>📍 Kenya</span>
+                    <h4>Maasai Mara National Reserve</h4>
+                </div>
+            </div>
+
+            <div class="hover-item"
+                style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba');"></div>
+
+            <div class="hover-item"
+                style="background-image:url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1');"></div>
+
+            <div class="hover-item"
+                style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');"></div>
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.querySelectorAll('.hover-item').forEach(item => {
+          item.addEventListener('mouseenter', () => {
+            document.querySelectorAll('.hover-item').forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+          });
+        });
+      </script>
+      
+
+</body>
+
+</html>

@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eagle Eye Expeditions is a wildlife passion</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/sunsive" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .font {
+            font-family: 'Sunsive', sans-serif;
+            font-weight: 600;
+        }
+
+        .font1 {
+            font-family: 'Sunsive', sans-serif;
+        }
+
+        .image-hover-wrapper {
+            height: 70vh;
+            overflow: hidden;
+        }
+
+        .hover-item {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            transition: flex 0.6s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hover-item::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .hover-item:hover {
+            flex: 4;
+        }
+
+        .hover-item:hover .hover-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hover-content {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            color: #fff;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.4s ease;
+        }
+
+        .hover-content h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .tour-card {
+            position: relative;
+            height: 420px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .tour-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, .15));
+        }
+
+        .tour-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .wishlist {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, .25);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .tour-info {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            right: 25px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* FEATURE POST */
+        .blog-feature {
+            position: relative;
+            display: block;
+            height: 420px;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .blog-feature img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .blog-feature::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, .15));
+        }
+
+        .blog-overlay {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            right: 30px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .blog-overlay h2 {
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        /* SIDE POSTS */
+        .blog-side img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .blog-side h6 {
+            font-weight: 600;
+            line-height: 1.3;
+            color: #b66a2c;
+        }
+
+        .read-time {
+            font-size: 13px;
+            color: #777;
+        }
+
+        /* AUTHORS */
+        .author,
+        .author-sm {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .author img,
+        .author-sm img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+        }
+
+        .hero-title {
+            font-size: 200px;
+            padding-top: 150px;
+        }
+
+        .book-btn{
+            margin-left: 100px;
+        }
+.div{
+    width: 800px;
+   
+}
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 50px;
+                padding-top: 40px;
+            }
+            .book-btn{
+                margin-left: 0;
+            }
+            .div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="img/EAGLE EYED EXPEDITIONS.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarCollapse">
+                    <div class="div d-flex justify-content-between align-items-center">
+                    <div class="navbar-nav ms-5 py-0 pe-4 ">
+                        <a href="index.html" class="nav-item nav-link active font1">Home</a>
+                        <a href="about.html" class="nav-item nav-link font1">Safari itineraries</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="about.html" class="nav-item nav-link font1">Our Team</a>
+
+                        <a href="contact.html" class="nav-item nav-link font1">Contact</a>
+                    </div>
+                    </div>
+                    <a href="" class="btn rounded-3 btn-primary py-2 px-3 book-btn"
+                        style="background-color: #f5a900; text-transform: capitalize;">Book Now</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container  py-5">
+                    <h1 class=" text-white text-center animated slideInDown font hero-title">ADVENTURE</h1>
+                    <div class="row align-items-center g-5">
+
+
+                        <div class="col-lg-3 text-center text-lg-start">
+
+                            <p class="text-white animated slideInLeft mb-4 pb-2 font1" style="font-size: 16px;">Tempor
+                                erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
+                            <a href="" class="btn rounded-3 btn-primary py-2 px-3 me-0"
+                                style="background-color: #ffffff; text-transform: capitalize; color:#ba6828;">Book
+                                Now</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/hero-01.webp" alt="">
+                        </div>
+                        <div class="col-lg-3 text-center text-lg-end overflow-hidden d-flex justify-content-end">
+                            <div class="d-flex flex-column align-items-between pt-2 w-25">
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Service Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5>Master Chefs</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Quality Food</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5>Online Order</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5>24/7 Service</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Service End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                    src="img/01.webp">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded-4 w-75 wow zoomIn" data-wow-delay="0.3s" src="img/02.webp"
+                                    style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded-4 w-75 wow zoomIn" data-wow-delay="0.5s"
+                                    src="img/05.webp">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.7s"
+                                    src="img/07.webp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title font text-start text-primary fw-normal">Why Choose Us</h5>
+                        <h2 class="mb-4 font">Unmatched Safari memories with Eagle Eye Expeditions.
+                        </h2>
+                        <p class="mb-4 font1">Eagle Eye Expeditions is a wildlife passion, an endless love story of the
+                            Tanzania bush in a nutshell. This Safari company is based in Arusha/Tanzania, and as its'
+                            name, the company is focused on providing unmatched Safari experiences by spotting and
+                            finding them first, and this is why we take our guests to remote areas where we can share
+                            this story and our wildlife passion to our guests.</p>
+
+                        <p class="mb-4">
+                            Our Aim - is to make your safari memories unique, unforgettable and unmatched at the best
+                            quality possible. To do this, we design Safaris itineraries with goals to fulfill your
+                            African savanna wishes.
+                        </p>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15
+                                    </h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50
+                                    </h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn rounded-3 btn-primary py-2 px-3 me-0"
+                            style="background-color: #f5a900; text-transform: capitalize;">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5" style="background-color: #fff5ee;">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title font text-center text-primary fw-normal">Destination</h5>
+                    <h1 class="mb-5 font">Top Destinations</h1>
+                </div>
+
+                <div class="image-hover-wrapper d-flex">
+
+                    <div class="hover-item active" style="background-image:url('img/wildbeest\ \(1\).webp');">
+                        <div class="hover-content">
+                            <span>📍 Tanzania</span>
+                            <h4 class="text-white font1">Maasai Mara National Reserve</h4>
+                        </div>
+                    </div>
+
+                    <div class="hover-item" style="background-image:url('img/lions-ngorongoro.webp');">
+                        <div class="hover-content">
+                            <span>📍 Tanzania</span>
+                            <h4 class="text-white font1">Ngorongoro Crater</h4>
+                        </div>
+                    </div>
+
+                    <div class="hover-item" style="background-image:url('img/manyara.jpg');">
+                        <div class="hover-content">
+                            <span>📍 Tanzania</span>
+                            <h4 class="text-white font1">Lake Manyara</h4>
+                        </div>
+                    </div>
+
+                    <div class="hover-item" style="background-image:url('img/zanzibar.jpg');">
+                        <div class="hover-content">
+                            <span>📍 Tanzania</span>
+                            <h4 class="text-white font1">Zanzibar</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Menu End -->
+
+        <!--itineraries-->
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title font text-center text-primary fw-normal">Safari</h5>
+                <h1 class="mb-5 font">Top Safari Packages</h1>
+            </div>
+            <div id="tourCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+
+                            <div class="col-lg-4">
+                                <div class="tour-card">
+                                    <img src="img/01.webp">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                        <h4 class="text-white font">Jungle Expedition</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,499</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="tour-card">
+                                    <img src="img/02.webp">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                        <h4 class="text-white font">Gorilla Tracking</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,499</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="tour-card">
+                                    <img src="img/05.webp">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                        <h4 class="text-white font">Serengeti Big 5 Safari</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,399</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 (duplicate content) -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+
+
+                            <div class="col-lg-4">
+                                <div class="tour-card">
+                                    <img src="img/06.webp">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                        <h4 class="text-white font">Jungle Expedition</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,499</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="tour-card">
+                                    <img src="img/07.webp">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Rwanda</span>
+                                        <h4 class="text-white font">Gorilla Tracking</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,499</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="tour-card">
+                                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                        <h4>Serengeti Big 5 Safari</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,399</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+        </div>
+
+
+        <!--itineraries-->
+
+        <!-- Reservation Start -->
+        <!--  <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="video">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                        <h1 class="text-white mb-4">Book A Table Online</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" id="datetime"
+                                            placeholder="Date & Time" data-target="#date3"
+                                            data-toggle="datetimepicker" />
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1">
+                                            <option value="1">People 1</option>
+                                            <option value="2">People 2</option>
+                                            <option value="3">People 3</option>
+                                        </select>
+                                        <label for="select1">No Of People</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Special Request" id="message"
+                                            style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         16:9 aspect ratio 
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                                allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Reservation Start -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3" style="background-color: #fff5ee;">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title font1 text-center text-primary fw-normal">Team Members</h5>
+                    <h1 class="mb-5">Our Team</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                    <h1 class="mb-5">Our Clients Say!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
+                            diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                                style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
+                            diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                                style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
+                            diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                                style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
+                            diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg"
+                                style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!--blog-->
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title font1 text-center text-primary fw-normal">Newsletter</h5>
+                <h1 class="mb-5">Our Blog</h1>
+            </div>
+            <div class="row g-4 align-items-start">
+
+                <!-- LEFT FEATURED POST -->
+                <div class="col-lg-7">
+                    <a href="#" class="blog-feature">
+                        <img src="img/04.webp" alt="">
+                        <div class="blog-overlay">
+                            <span class="read-time">2 Min Read</span>
+                            <h2 class="text-white font">Top 5 Safaris to Experience Before You Die</h2>
+                            <div class="author">
+                                <img src="img/EAGLE EYED EXPEDITIONS.png">
+                                <span>Logan Hall • 12 May, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- RIGHT POSTS -->
+                <div class="col-lg-5">
+
+                    <!-- ITEM -->
+                    <a href="#" class="blog-side d-flex mb-4">
+                        <img src="img/06.webp">
+                        <div class="ms-3">
+                            <span class="read-time">2 Min Read</span>
+                            <h6 style="color: #f5a900;">Wooden Canoe Floating Between Dense Mangrove Roots</h6>
+                            <div class="author-sm">
+                                <img src="img/EAGLE EYED EXPEDITIONS.png">
+                                <span>Logan Hall • 12 May, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- ITEM -->
+                    <a href="#" class="blog-side d-flex mb-4">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+                        <div class="ms-3">
+                            <span class="read-time">2 Min Read</span>
+                            <h6 style="color: #f5a900;">Backpack Laid Out With Compass, Boots, Insect Repellent</h6>
+                            <div class="author-sm">
+                                <img src="img/EAGLE EYED EXPEDITIONS.png">
+                                <span>Aston Hall • 12 May, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- ITEM -->
+                    <a href="#" class="blog-side d-flex">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+                        <div class="ms-3">
+                            <span class="read-time">2 Min Read</span>
+                            <h6 style="color: #f5a900;">Night in the Wild: Camping With Lions Roaring Nearby</h6>
+                            <div class="author-sm">
+                                <img src="img/EAGLE EYED EXPEDITIONS.png">
+                                <span>Logan Hall • 12 May, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--blog-->
+
+        <!-- Footer Start -->
+        <div class="container-fluid  text-light footer pt-5 mt-5 wow fadeIn" style="background-color: #fff5ee;"
+            data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title font text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link text-dark" href="">About Us</a>
+                        <a class="btn btn-link text-dark" href="">Contact Us</a>
+                        <a class="btn btn-link text-dark" href="">Reservation</a>
+                        <a class="btn btn-link text-dark" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-dark" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title font text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2 text-dark"><i class="fa fa-map-marker-alt me-3 text-dark"></i>123 Street, New
+                            York, USA</p>
+                        <p class="mb-2 text-dark"><i class="fa fa-phone-alt me-3 text-dark"></i>+012 345 67890</p>
+                        <p class="mb-2 text-dark"><i class="fa fa-envelope me-3 text-dark"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-twitter text-dark"></i></a>
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-facebook-f text-dark"></i></a>
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-youtube text-dark"></i></a>
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-linkedin-in text-dark"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title font text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-dark fw-normal">Monday - Saturday</h5>
+                        <p class="text-dark">09AM - 09PM</p>
+                        <h5 class="text-dark fw-normal">Sunday</h5>
+                        <p class="text-dark">10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6"
+                        style="height: 250px; background-image: url('img/EAGLE\ EYED\ EXPEDITIONS.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script>
+        document.querySelectorAll('.hover-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                document.querySelectorAll('.hover-item').forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
