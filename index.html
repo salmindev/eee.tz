@@ -224,28 +224,35 @@
         }
 
         .hero-title {
-            font-size: 200px;
-            padding-top: 150px;
+            font-size: 180px;
+            padding-top: 50px;
         }
 
-        .book-btn{
+        .book-btn {
             margin-left: 100px;
         }
-.div{
-    width: 800px;
-   
-}
+
+        .div {
+            width: 800px;
+
+        }
+
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 50px;
-                padding-top: 40px;
+                padding-top: 20px;
             }
-            .book-btn{
+
+            .book-btn {
                 margin-left: 0;
             }
-            .div{
+
+            .div {
                 width: 100%;
             }
+        }
+        .media{
+            transform: rotate(-90deg);
         }
     </style>
 </head>
@@ -271,25 +278,24 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
-                <div class="collapse navbar-collapse"
-                    id="navbarCollapse">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="div d-flex justify-content-between align-items-center">
-                    <div class="navbar-nav ms-5 py-0 pe-4 ">
-                        <a href="index.html" class="nav-item nav-link active font1">Home</a>
-                        <a href="about.html" class="nav-item nav-link font1">Safari itineraries</a>
+                        <div class="navbar-nav ms-5 py-0 pe-4 ">
+                            <a href="index.html" class="nav-item nav-link active font1">Home</a>
+                            <a href="about.html" class="nav-item nav-link font1">Safari itineraries</a>
 
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item">Booking</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="booking.html" class="dropdown-item">Booking</a>
+                                    <a href="team.html" class="dropdown-item">Our Team</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                </div>
                             </div>
-                        </div>
-                        <a href="about.html" class="nav-item nav-link font1">Our Team</a>
+                            <a href="about.html" class="nav-item nav-link font1">Our Team</a>
 
-                        <a href="contact.html" class="nav-item nav-link font1">Contact</a>
-                    </div>
+                            <a href="contact.html" class="nav-item nav-link font1">Contact</a>
+                        </div>
                     </div>
                     <a href="" class="btn rounded-3 btn-primary py-2 px-3 book-btn"
                         style="background-color: #f5a900; text-transform: capitalize;">Book Now</a>
@@ -310,18 +316,21 @@
                                 style="background-color: #ffffff; text-transform: capitalize; color:#ba6828;">Book
                                 Now</a>
                         </div>
-                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                            <img class="img-fluid" src="img/hero-01.webp" alt="">
+                        <div
+                            class="col-lg-6 text-center d-flex justify-content-center align-items-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/hero-01.webp" style="height: 60vh;" alt="">
                         </div>
                         <div class="col-lg-3 text-center text-lg-end overflow-hidden d-flex justify-content-end">
-                            <div class="d-flex flex-column align-items-between pt-2 w-25">
-                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-light btn-social" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                                <a class="btn btn-outline-light btn-social" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
+                            <div class="d-flex flex-column justify-content-center align-items-center pt-2 w-25 h-50">
+                                <a class="btn  btn-social" href=""><i class="fab fa-twitter text-white"></i></a>
+                                <a class="btn  btn-social" href=""><i
+                                        class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn  btn-social" href=""><i class="fab fa-youtube text-white"></i></a>
+                                <a class="btn  btn-social" href=""><i
+                                        class="fab fa-linkedin-in text-white"></i></a>
+                            <p class="media font text-white w-75  mt-5 h-50">Follow:</p>        
                             </div>
+                           
                         </div>
 
                     </div>
