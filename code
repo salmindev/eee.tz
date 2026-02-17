@@ -1,0 +1,134 @@
+<div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title font text-center text-primary fw-normal">Safari</h5>
+                <h1 class="mb-5 font">Top Safari Packages</h1>
+            </div>
+            <div id="tourCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+
+                            <div class="col-lg-4">
+                                <div class="tour-card">
+                                    <img src="img/01.webp">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                        <h4 class="text-white font">Jungle Expedition</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,499</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="tour-card">
+                                    <img src="img/02.webp">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                        <h4 class="text-white font">Gorilla Tracking</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,499</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="tour-card">
+                                    <img src="img/05.webp">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                        <h4 class="text-white font">Serengeti Big 5 Safari</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,399</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 (duplicate content) -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+
+
+                            <div class="col-lg-4">
+                                <div class="tour-card">
+                                    <img src="img/06.webp">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                        <h4 class="text-white font">Jungle Expedition</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,499</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="tour-card">
+                                    <img src="img/07.webp">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Rwanda</span>
+                                        <h4 class="text-white font">Gorilla Tracking</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,499</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="tour-card">
+                                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                    <div class="tour-info">
+                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                        <h4>Serengeti Big 5 Safari</h4>
+                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                        <div class="meta">
+                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                            <span class="price">From $1,399</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+        </div>

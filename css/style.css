@@ -147,19 +147,13 @@
         position: fixed;
         background: var(--primary) !important;
     }
-    .hero-header {
-        background:  url(../img/bk.jpeg);
-        background-position:  center 20%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-    }
+    
 }
 
 
 /*** Hero Header ***/
 .hero-header {
-    background:  url(../img/Maasai_mara_evening_caption_of_wildlife_with_the_beautiful_sunset_scene.jpg);
+    background:  url(../img/ChabaPorini/DSC_9113.jpg);
     background-position:  center 20%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -486,3 +480,18 @@
     border-right: none;
 }
 
+@media (max-width: 767.98px) {
+    .hero-header {
+        background:  url(../img/ChabaPorini/DSC_9113.jpg);
+        background-position:  center 20%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 78vh;
+    }
+    .info{
+        margin-top: 50px;
+    }
+    .hero-title{
+        margin-top: 160px;
+    }
+  }
