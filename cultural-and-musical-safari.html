@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Eagle Eye Expeditions is a wildlife passion</title>
+    <title>Cultural and Musical Safari - Eagle Eye Expeditions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -110,7 +110,7 @@
             content: "";
             position: absolute;
             inset: 0;
-           
+
         }
 
         .tour-card:hover img {
@@ -256,8 +256,151 @@
             transform: rotate(-90deg);
         }
 
-        body {
-            background-color: #ec4b00;
+        /*** Hero Header ***/
+        .hero-header {
+            background: url('img/family\ Overview.jpg.jpeg');
+            background-position: center 20%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 120vh;
+        }
+
+        @media (max-width: 767.98px) {
+            .hero-header {
+                background: url('img/zzebra.jpeg');
+                background-position: center 20%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 78vh;
+            }
+        }
+
+        .pagetitle {
+            margin-top: 40%;
+            font-size: 60px;
+        }
+
+        .itinerary-split {
+            position: relative;
+            height: 455px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .itinerary-split1 {
+            position: relative;
+            height: 455px;
+
+
+            background-size: cover;
+            background-position: center;
+            background-position-y: 25%;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .itinerary-split2 {
+            position: relative;
+            height: 455px;
+            background-size: contain;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* LEFT & RIGHT halves */
+        .day {
+
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            height: 40px;
+            color: #fff;
+
+        }
+
+        .left {
+            text-align: left;
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.35);
+            width: 40%;
+        }
+
+        .left1 {
+            text-align: left;
+            padding-top: 50px;
+            background: rgba(0, 0, 0, 0.35);
+            width: 40%;
+            height: 10px;
+        }
+
+        .right {
+            text-align: right;
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.35);
+            width: 40%;
+            margin-left: 280px;
+        }
+
+        /* 🔥 VERTICAL CENTER LINE */
+        .itinerary-split::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            /* full height */
+            left: 50%;
+            width: 10px;
+            /* thin line */
+            background: #fff;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .itinerary-split1::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            /* full height */
+            left: 50%;
+            width: 10px;
+            /* thin line */
+            background: #fff;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .itinerary-split2::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            /* full height */
+            left: 50%;
+            width: 10px;
+            /* thin line */
+            background: #fff;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+
+        @media (max-width: 768px) {
+            .itinerary-split {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+
+            .itinerary-split .day {
+                text-align: left;
+            }
         }
     </style>
 </head>
@@ -309,36 +452,8 @@
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container  py-5">
-                    <h1 class=" text-white text-center animated slideInDown font hero-title">Eagle Eye Expeditions</h1>
-                    <div class="row align-items-center g-5">
+                    <h1 class=" text-white text-center animated slideInDown font pagetitle">Family Safari</h1>
 
-
-                        <div class="col-lg-6 text-center text-lg-start info">
-
-                            <p class="text-white animated slideInLeft mb-4 pb-2 font1" style="font-size: 16px;">Eagle
-                                Eye Expeditions specializes in safari tours across Tanzania, combining expert guides,
-                                rich wildlife encounters, and professionally guided safaris.</p>
-                            <a href="" class="btn rounded-3  py-2 px-3 me-0"
-                                style="background-color: #ffffff; text-transform: capitalize; color:#f5a900;">Book
-                                Now</a>
-                        </div>
-                        <!-- <div
-                            class="col-lg-6 text-center d-flex justify-content-center align-items-center text-lg-end overflow-hidden">
-                            <img class="img-fluid" src="img/secretary-bird.png" style="height: 60vh;" alt="">
-                        </div> -->
-                        <div
-                            class="col-lg-6 text-center text-lg-end overflow-hidden d-lg-flex justify-content-end d-none">
-                            <div class="d-flex flex-column justify-content-center align-items-center pt-2 w-25 h-50">
-                                <a class="btn  btn-social" href=""><i class="fab fa-twitter text-white"></i></a>
-                                <a class="btn  btn-social" href=""><i class="fab fa-facebook-f text-white"></i></a>
-                                <a class="btn  btn-social" href=""><i class="fab fa-youtube text-white"></i></a>
-                                <a class="btn  btn-social" href=""><i class="fab fa-linkedin-in text-white"></i></a>
-                                <p class="media font text-white w-75  mt-5 h-50">Follow:</p>
-                            </div>
-
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
@@ -395,52 +510,55 @@
         <div class="container-xxl " style="background-color: #ec4b00;">
             <div class="container">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="row g-3 mb-4">
-                            <div class="col-12 text-start">
-                                <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
-                                    src="img/ChabaPorini/DSC_5813.jpg" style="height: 330px; object-fit: cover;">
-                            </div>
-                            <!-- <div class="col-6 text-start">
-                                <img class="img-fluid rounded-4 w-75 wow zoomIn" data-wow-delay="0.3s"
-                                    src="img/bobjr.jpeg" style="margin-top: 25%;height: 265px; object-fit: cover;">
-                            </div> -->
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.5s"
-                                    src="img/eagleeye.jpeg" style="height: 265px; object-fit: cover;">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.7s"
-                                    src="img/bobjr.jpeg" style="height: 265px; object-fit: cover;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5 class="section-title font text-start text-primary fw-normal text-light">Why Choose Us</h5>
-                        <h2 class="mb-4 font text-light">Unmatched Safari memories with Eagle Eye Expeditions.
+
+                    <div class="col-lg-12 mb-4">
+                        <h2 class="mb-4 font text-light text-center">
+                            Overview
                         </h2>
-                        <p class="mb-4 font1 text-light">Eagle Eye Expeditions is a wildlife passion, an endless love
-                            story of the
-                            Tanzania bush in a nutshell. This Safari company is based in Arusha/Tanzania, and as its'
-                            name, the company is focused on providing unmatched Safari experiences by spotting and
-                            finding them first, and this is why we take our guests to remote areas where we can share
-                            this story and our wildlife passion to our guests.</p>
+                        <p class="mb-4 font1 text-light" style="text-align: justify;">
+                            Our Head guide, Francis Thomas Kijazi (Chaba) has been a guide over 16 years, and still
+                            veery much passionate about his job, but, apart from Wildlife love he has with Tanzania
+                            bush, he also has an incredible music talent, he is a Musician/Rapper, and he has been so,
+                            for over 20 years. He is a very good example of Best of both worlds, and also a reason why
+                            we designed this itinerary for Artists guests who would love to go to the bush but also have
+                            a few days in Arusha to see and experience life in the city as a musician from Arusha does.
+                            Chaba will take you to the bush and tell you amazing bush stories and then back in Arusha,
+                            he will take you to the studio and give you an experience which any artist guest would wish
+                            to have outside their contries.
 
-                        <p class="mb-4 text-light">
-                            Our Aim - is to make your safari memories unique, unforgettable and unmatched at the best
-                            quality possible. To do this, we design Safaris itineraries with goals to fulfill your
-                            African savanna wishes.
+                            The itinerary we have prepared includes Traditional Culture and Wildlife. The family will
+                            get to see 3 tribes in the Northern Tanzania which up to this day still live their lives
+                            proudly traditional. These are Maasai (Livestock keepers), Hadzabe (Hunters and Gathers),
+                            and Datoga (The Blacksmith). The family will get to learn and appreciate the different
+                            perspective of life and we make sure that we take our guests to the most authentic families.
+                            The Itineraries also have a large portion of wilderness experience. The family will visit 3
+                            amazing parks for wildlife viewing, (Tarangire, Ngorongoro and Serengeti).
+                            It is a 12 days safari as shown in the coming itinerary.
+                            In this itinerary we have designed 8 days in the bush and 4 days in Arusha. In these 8 days,
+                            The Artists guests will get to see 3 different tribes, (Hadzabe, Datoga and Maasai) in the
+                            bush, to experience their life stories and their original and cultural music too. Also the
+                            bush itself Ngorongoro and Serengeti, then the last 4 Days in Arusha, the Artists guests
+                            will get to experience studio time, how we produce our music and a chance to experience
+                            Urban local music instruments like a Saxophone and Trumpets band, Also Radio and Club time.
+                            Then the last day will be a shopping day then Fly out from Kilimanjaro Airport.
+
+                            We advise artists to bring portable recording equipments, since we can record all the
+                            traditional songs from the local tribes and use them as samples in the music making.
                         </p>
 
-                        <p class="mb-2 text-light">
-                            The Bush Expeditions we provide are empowered by the well trained expert guides who make
-                            your safari a living dream. These are the most important part of your Safari and our guides
-                            are knowledgeable about the bush, and our country, and hospitable, and caring for your
-                            comfortable safari atmosphere whether during game drives or when handling you over to the
-                            overnighting bush destinations which we also select the best for our guests.
-                        </p>
+                        <ul class="nav nav-tabs d-flex justify-content-center align-items-center border border-0">
+                            <li class="nav-item">
+                                <a class="nav-link active fw-bold btn rounded-3 btn-primary py-2 px-3 book-btn"
+                                    data-bs-toggle="tab" href="#home">Itinerary 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold btn rounded-3 btn-primary py-2 px-3 book-btn"
+                                    style="background-color: #f5a900;" data-bs-toggle="tab" href="#menu1">Itinerary
+                                    2</a>
+                            </li>
+                        </ul>
 
-                        <div class="row g-4 mb-4">
+                        <!-- <div class="row g-4 mb-4">
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-light px-3">
                                     <h1 class="flex-shrink-0 display-5 text-light mb-0" data-toggle="counter-up">03
@@ -463,174 +581,340 @@
                             </div>
                         </div>
                         <a href="" class="btn rounded-3 btn-primary py-2 px-3 me-0 mb-4"
-                            style="background-color: #f5a900; text-transform: capitalize;">Read More</a>
+                            style="background-color: #f5a900; text-transform: capitalize;">Read More</a> -->
                     </div>
                 </div>
             </div>
         </div>
         <!-- About End -->
         <!--itineraries-->
-        <div class="container-fluid py-5" style="background-color: #fff5ee;">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h5 class="section-title font text-center text-primary fw-normal">Safari</h5>
-                <h1 class="mb-5 font">Top Safari Packages</h1>
-            </div>
-            <div id="tourCarousel" class="carousel slide container" data-bs-ride="carousel">
+        <div class="container-fluid py-5">
 
-                <div class="carousel-inner">
 
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="row g-4">
 
-                            <div class="col-lg-4">
-                                <a href="/photograph-safari">
-                                <div class="tour-card">
-                                    <img src="img/zzebra.jpeg">
-                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
-                                    <div class="tour-info">
-                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
-                                        <h4 class="text-white font">Photography Safari</h4>
-                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
-                                        <div class="meta">
-                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
-                                            <span class="price"></span>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane  active" id="home">
+                    <div class="row">
+                        <div class="col-lg-12 py-5 ">
+                            <h3 class="text-center">Wet Season</h3>
+                            <p class="text-center">12 Days,...(1 Night Arusha, 1 Night Eyasi, 1 Night Ngorongoro Crater,
+                                2 Nights Ndutu, 3 Nights South Serengeti, Then fly or drive to Arusha, 3 Nights Arusha,
+                                then on 12th day shopping and fly out.)</p>
+                            <div class="row gx-2 my-3 ">
+                                <!--  <div class="col-12 text-start">
+                                    <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                        src="img/leopard1.jpeg"
+                                        style="height: 330px; object-fit: cover;">
+                                </div> -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class=" picha"
+                                        style="background-image: url('img/Family\ Day\ 1.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
+                                        <div class="px-3"
+                                            style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 4px;">
+                                            <span class="day-label fw-bold fs-5 text-white">Day 01</span>
+                                            <p class="text-light">Arrival in Arusha for 1 night.</p>
                                         </div>
                                     </div>
                                 </div>
-                                </a>
+                                <div class="col-md-6 col-sm-6 text-end ">
+
+                                    <div class=""
+                                        style="background-image: url('img/Family\ Day\ 2.jpg'); background-position: center; background-position-y: -400px; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
+                                        <div class="px-3"
+                                            style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 135px;">
+                                            <span class="day-label fw-bold fs-5 text-white">Day 02</span>
+                                            <p class="text-light">Drive to the Eyasi for 1 Night.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  <div class="row gx-2">
+                            <div class="col-6 ">
+                                <div class=" picha" style="background-image: url('img/sunset-chui.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
+                                    <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 4px;">
+                                    <span class="day-label fw-bold fs-5 text-white">Day 03</span>
+                                    <p class="text-light">A Morning in the Crater then Drive to Ndutu for 3 Nights.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 text-end " >
+                                
+                                    <div class="" style="background-image: url('img/chaba-porini-new/ndutu.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
+                                        <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 135px;">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 04</span>
+                                        <p class="text-light">Full Day in Ndutu.</p>
+                                        </div>
+                                    </div>    
+                            </div>
+                            </div> -->
+                            <div class="row gx-2 my-3 ">
+                                <!--  <div class="col-12 text-start">
+                                    <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                        src="img/leopard1.jpeg"
+                                        style="height: 330px; object-fit: cover;">
+                                </div> -->
+                                <div class="itinerary-split1"
+                                    style="background-image: url('img/Family\ Day3\ &4.jpeg'); background-position:center; background-repeat: no-repeat; background-size: cover;">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 03</span>
+                                        <p class="text-light">
+                                            Drive to Ngorongoro Crater Rim for 1 Night.
+                                        </p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 04</span>
+                                        <p class="text-light">Morning in the Crater then after Lunch Drive to Ndutu for
+                                            2 Nights.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-2 my-3 ">
+                                <!--  <div class="col-12 text-start">
+                                    <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                        src="img/leopard1.jpeg"
+                                        style="height: 330px; object-fit: cover;">
+                                </div> -->
+                                <div class="itinerary-split2" style="background-image: url('img/5&6.jpeg'); background-size:cover; 
+                                background-position-y:-310px;">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 05</span>
+                                        <p class="text-light">Full Day in Ndutu.</p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 06</span>
+                                        <p class="text-light">Drive to Eastern Serengeti for 3 Nights.</p>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col-lg-4 ">
-                                <a href="/birding-safari">
-                                <div class="tour-card">
-                                    <img src="img/birding.jpeg">
-                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
-                                    <div class="tour-info">
-                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
-                                        <h4 class="text-white font">Birding Safari</h4>
-                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
-                                        <div class="meta">
-                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
-                                            <span class="price"></span>
-                                        </div>
+                            <div class="row gx-2 my-3 ">
+                                <!--  <div class="col-12 text-start">
+                                    <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                        src="img/leopard1.jpeg"
+                                        style="height: 330px; object-fit: cover;">
+                                </div> -->
+                                <div class="itinerary-split2" style="background-image: url('img/FFamily\ 7\ &\ 8.jpg'); background-size: cover;
+                                background-position-y:-300px ;
+            
+                                ">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 07</span>
+                                        <p class="text-light">Full Day in Eastern Serengeti.</p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 08</span>
+                                        <p class="text-light">Full Day in Eastern Serengeti.</p>
                                     </div>
                                 </div>
-                                </a>
+                            </div>
+                            <div class="row gx-2 my-3 ">
+                                <!--  <div class="col-12 text-start">
+                                    <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                        src="img/leopard1.jpeg"
+                                        style="height: 330px; object-fit: cover;">
+                                </div> -->
+                                <div class="itinerary-split2" style="background-image: url('img/9\ &10.jpg'); background-size: cover; background-position-y: -300px;
+                                ">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 09</span>
+                                        <p class="text-light"> Breakfast at the camp a slow GaMe Drive to the Airport
+                                            then Fly out from Central Serengeti to Arusha.
+                                        </p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 10</span>
+                                        <p class="text-light">Studio Session in Arusha.</p>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col-lg-4 ">
-                                <a href="/serengeti-great-migration-safari">
-                                <div class="tour-card">
-                                    <img src="img/masai-mara.jpeg">
-                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
-                                    <div class="tour-info">
-                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
-                                        <h4 class="text-white font">Great Serengeti Migration Safari</h4>
-                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
-                                        <div class="meta">
-                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
-                                            <span class="price"></span>
-                                        </div>
+                            <div class="row gx-2 my-3 ">
+                                <!--  <div class="col-12 text-start">
+                                    <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                        src="img/leopard1.jpeg"
+                                        style="height: 330px; object-fit: cover;">
+                                </div> -->
+                                <div class="itinerary-split2" style="background-image: url('img/11&12.jpeg'); background-size: cover; background-position: center;
+                                ">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 11</span>
+                                        <p class="text-light">Meeting Local Musician (Guitarists, Saxophone and Trumpets
+                                            band)</p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 12</span>
+                                        <p class="text-light">Breakfast at the Lodge, Then Shopping, Lunch in town, Day
+                                            room, Drive to the Airport then Fly out.</p>
                                     </div>
                                 </div>
-                                </a>
                             </div>
-                            <div class="col-lg-4">
-                                <a href="/family-safari">
-                                <div class="tour-card">
-                                    <img src="img/family.jpeg">
-                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
-                                    <div class="tour-info">
-                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
-                                        <h4 class="text-white font">Family Safaris</h4>
-                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
-                                        <div class="meta">
-                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
-                                            <span class="price"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 ">
-                                <a href="/couple-safari">
-                                <div class="tour-card">
-                                    <img src="img/couple.jpeg">
-                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
-                                    <div class="tour-info">
-                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
-                                        <h4 class="text-white font">Couple Safaris</h4>
-                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
-                                        <div class="meta">
-                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
-                                            <span class="price"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 ">
-                                <a href="/cultural-and-musical-safari">
-                                <div class="tour-card">
-                                    <img src="img/leopard.jpeg">
-                                    <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
-                                    <div class="tour-info">
-                                        <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
-                                        <h4 class="text-white font">Cultural Safaris</h4>
-                                        <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
-                                        <div class="meta">
-                                            <span><i class="fa-regular fa-clock"></i> 7 Days</span>
-                                            <span class="price"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
+
                         </div>
+
+
                     </div>
+                </div>
+                <div class="tab-pane  fade" id="menu1">
+                    <div class="row">
+                        <div class="col-lg-12 py-5 ">
+                            <h3 class="text-center">Dry Season</h3>
+                            <p class="text-center">12 Days,...(1 Night Arusha, 1 Night Eyasi, 1 Night Ngorongoro Crater,
+                                2 Nights Eastern Serengeti, 3 Nights Northern Serengeti Then fly or drive to Arusha, 3
+                                Nights Arusha, then on 12th day shopping and fly out.)</p>
+                            <div class="row gx-2 mb-4 ">
+                                <!--  <div class="col-12 text-start">
+                                    <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                        src="img/leopard1.jpeg"
+                                        style="height: 330px; object-fit: cover;">
+                                </div> -->
+                                <div class="itinerary-split1"
+                                    style="background-image: url('img/2nd\ 1&2.jpg'); background-position:center; background-size: cover;">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5">Day 01</span>
+                                        <p> Arrival in Arusha for 1 night,</p>
+                                    </div>
 
-                    <!-- Slide 2 (duplicate content) -->
-                    <!-- <div class="carousel-item">
-                <div class="row g-4">
-
-
-                    
-
-                    
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="tour-card">
-                            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
-                            <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
-                            <div class="tour-info">
-                                <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
-                                <h4>Serengeti Big 5 Safari</h4>
-                                <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
-                                <div class="meta">
-                                    <span><i class="fa-regular fa-clock"></i> 7 Days</span>
-                                    <span class="price">9</span>
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5">Day 02</span>
+                                        <p>Drive to the Eyasi for 1 Night.</p>
+                                    </div>
                                 </div>
                             </div>
+                            <!--  <div class="row gx-2">
+                           <div class="col-6 ">
+                                <div class=" picha" style="background-image: url('img/sunset-chui.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
+                                    <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 4px;">
+                                    <span class="day-label fw-bold fs-5 text-white">Day 03</span>
+                                    <p class="text-light">A Morning in the Crater then Drive to Ndutu for 3 Nights.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 text-end " >
+                                
+                                    <div class="" style="background-image: url('img/chaba-porini-new/ndutu.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
+                                        <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 135px;">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 04</span>
+                                        <p class="text-light">Full Day in Ndutu.</p>
+                                        </div>
+                                    </div>    
+                            </div>
+                            </div> -->
+                            <div class="row gx-2  mb-4 ">
+                                <!--  <div class="col-12 text-start">
+                                    <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                        src="img/leopard1.jpeg"
+                                        style="height: 330px; object-fit: cover;">
+                                </div> -->
+                                <div class="itinerary-split1"
+                                    style="background-image: url('img/2nd\ 3&4\ .jpg'); background-position: center; background-size: cover;">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5">Day 03</span>
+                                        <p>Drive to Ngorongoro Crater Rim for 1 Night.</p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5">Day 04</span>
+                                        <p>Morning in the Crater then after Lunch Drive to Eastern Serengeti for 2 Nights.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-2 mb-4 ">
+                                <!--  <div class="col-12 text-start">
+                                    <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                        src="img/leopard1.jpeg"
+                                        style="height: 330px; object-fit: cover;">
+                                </div> -->
+                                <div class="itinerary-split2"
+                                    style="background-image: url('img/2nd5&6.jpg'); background-position: center; background-size: cover;">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5">Day 05</span>
+                                        <p>Full Day in Eastern Serengeti.</p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5">Day 06</span>
+                                        <p>After Breakfast Drive to Northern Serengeti for 3 Nights.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-2 mb-4 ">
+                                <!--  <div class="col-12 text-start">
+                                    <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                        src="img/leopard1.jpeg"
+                                        style="height: 330px; object-fit: cover;">
+                                </div> -->
+                                <div class="itinerary-split2"
+                                    style="background-image: url('img/2nd\ fam7&8jpg.jpg'); background-position: center; background-size: cover;">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5">Day 07</span>
+                                        <p>Full Day in Northern Serengeti.</p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5">Day 08</span>
+                                        <p>Full Day in Northern Serengeti.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row gx-2 mt-4 mb-4 ">
+                                <!--  <div class="col-12 text-start">
+                                        <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                            src="img/leopard1.jpeg"
+                                            style="height: 330px; object-fit: cover;">
+                                    </div> -->
+                                <div class="itinerary-split1"
+                                    style="background-image: url('img/2nd\ Fam\ 9&10\ .jpeg'); background-position:center; background-size: cover;">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5">Day 09</span>
+                                        <p> Breakfast at the camp a slow GaMe Drive to the Airport then Fly out from Northern Serengeti to Arusha.</p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5">Day 10</span>
+                                        <p>Studio Session in Arusha.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-2 mt-4 mb-4 ">
+                                <!--  <div class="col-12 text-start">
+                                        <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                            src="img/leopard1.jpeg"
+                                            style="height: 330px; object-fit: cover;">
+                                    </div> -->
+                                <div class="itinerary-split1"
+                                    style="background-image: url('img/Family.jpg'); background-position-y:-20px; background-size: cover;">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5">Day 11</span>
+                                        <p>Meeting Local Musician (Guitarists, Saxophone and Trumpets band)</p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5">Day 12</span>
+                                        <p>Breakfast at the Lodge, Then Shopping, Lunch in town, Day room, Drive to the Airport then Fly out.</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
+
                     </div>
-
-
                 </div>
-            </div> -->
-
-                </div>
-
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
 
             </div>
+
+
+
         </div>
         <!--itineraries-->
 
@@ -685,12 +969,13 @@
         <!--Reasons-->
         <div class="container">
             <div class="row">
-                 <div class="col-md-6 col-sm-6 pt-5">
-                    
-                    <img src="img/mawindo.jpeg" class="pb-5" style="width:100%; height: 380px; object-fit: cover;" alt="">
+                <div class="col-md-6 col-sm-6 pt-5">
 
-                   
-                </div> 
+                    <img src="img/mawindo.jpeg" class="pb-5" style="width:100%; height: 380px; object-fit: cover;"
+                        alt="">
+
+
+                </div>
 
                 <div class="col-md-6 col-sm-6">
                     <h3 class="mb-4 pt-5 font">
