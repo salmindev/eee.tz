@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Restoran - Bootstrap Restaurant Template</title>
+    <title>Contact Us - Eagle Eye Expeditions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -14,7 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -30,12 +32,240 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/sunsive" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .font {
+            font-family: 'Sunsive', sans-serif;
+            font-weight: 600;
+        }
+
+        .font1 {
+            font-family: 'Sunsive', sans-serif;
+        }
+
+        .image-hover-wrapper {
+            height: 70vh;
+            overflow: hidden;
+        }
+
+        .hover-item {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            transition: flex 0.6s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hover-item::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .hover-item:hover {
+            flex: 4;
+        }
+
+        .hover-item:hover .hover-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hover-content {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            color: #fff;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.4s ease;
+        }
+
+        .hover-content h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .tour-card {
+            position: relative;
+            height: 420px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .tour-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+        }
+
+        .tour-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .wishlist {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, .25);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .tour-info {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            right: 25px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* FEATURE POST */
+        .blog-feature {
+            position: relative;
+            display: block;
+            height: 420px;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .blog-feature img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .blog-feature::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, .15));
+        }
+
+        .blog-overlay {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            right: 30px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .blog-overlay h2 {
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        /* SIDE POSTS */
+        .blog-side img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .blog-side h6 {
+            font-weight: 600;
+            line-height: 1.3;
+            color: #b66a2c;
+        }
+
+        .read-time {
+            font-size: 13px;
+            color: #777;
+        }
+
+        /* AUTHORS */
+        .author,
+        .author-sm {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .author img,
+        .author-sm img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+        }
+
+        .hero-title {
+            font-size: 70px;
+            padding-top: 50px;
+        }
+
+        .book-btn {
+            margin-left: 100px;
+        }
+
+        .div {
+            width: 800px;
+
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 50px;
+                padding-top: 20px;
+            }
+
+            .book-btn {
+                margin-left: 0;
+            }
+
+            .div {
+                width: 100%;
+            }
+        }
+
+        .media {
+            transform: rotate(-90deg);
+        }
+
+        body {
+            background-color: #ec4b00;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -47,47 +277,44 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <img src="img/EAGLE EYED EXPEDITIONS.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="menu.html" class="nav-item nav-link">Menu</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item">Booking</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    <div class="div d-flex justify-content-between align-items-center">
+                        <div class="navbar-nav ms-5 py-0 pe-4 ">
+                            <a href="index.html" class="nav-item nav-link  font1 text-light">Home</a>
+                            <a href="about.html" class="nav-item nav-link font1">Safari itineraries</a>
+
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="booking.html" class="dropdown-item">Booking</a>
+                                    <a href="team.html" class="dropdown-item">Our Team</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                </div>
                             </div>
+                            <a href="about.html" class="nav-item nav-link font1">Our Team</a>
+
+                            <a href="contact.html" class="nav-item nav-link font1">Contact</a>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                    <a href="" class="btn rounded-3 btn-primary py-2 px-3 book-btn"
+                        style="background-color: #f5a900; text-transform: capitalize;">Book Now</a>
                 </div>
             </nav>
 
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
-                        </ol>
-                    </nav>
+            <div class="container-xxl py-5 bg-dark hero-header mb-5"
+                style="background-image: url('img/ChabaPorini/DSC_9118.jpg');">
+                <div class="container  py-5" style="margin-top: 80%;">
+                    <h1 class=" text-white text-center animated slideInDown font hero-title">Contact Us</h1>
+
                 </div>
             </div>
         </div>
         <!-- Navbar & Hero End -->
-
 
         <!-- Contact Start -->
         <div class="container-xxl py-5">
@@ -131,7 +358,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Your Email">
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
@@ -143,7 +371,8 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <textarea class="form-control" placeholder="Leave a message here"
+                                                id="message" style="height: 150px"></textarea>
                                             <label for="message">Message</label>
                                         </div>
                                     </div>
@@ -161,43 +390,45 @@
 
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid  text-light footer pt-5 mt-5 wow fadeIn" style="background-color: #ec4b00;"
+            data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Reservation</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <h4 class="section-title font text-start text-white fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link text-dark" href="">About Us</a>
+                        <a class="btn btn-link text-dark" href="">Contact Us</a>
+                        <a class="btn btn-link text-dark" href="">Reservation</a>
+                        <a class="btn btn-link text-dark" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-dark" href="">Terms & Condition</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <h4 class="section-title font text-start text-white fw-normal mb-4">Contact</h4>
+                        <p class="mb-2 text-dark"><i class="fa fa-map-marker-alt me-3 text-dark"></i>123 Street, New
+                            York, USA</p>
+                        <p class="mb-2 text-dark"><i class="fa fa-phone-alt me-3 text-dark"></i>+012 345 67890</p>
+                        <p class="mb-2 text-dark"><i class="fa fa-envelope me-3 text-dark"></i>info@example.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-twitter text-dark"></i></a>
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-facebook-f text-dark"></i></a>
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-youtube text-dark"></i></a>
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-linkedin-in text-dark"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
-                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
-                        <p>09AM - 09PM</p>
-                        <h5 class="text-light fw-normal">Sunday</h5>
-                        <p>10AM - 08PM</p>
+                        <h4 class="section-title font text-start text-white fw-normal mb-4">Opening</h4>
+                        <h5 class="text-dark fw-normal">Monday - Saturday</h5>
+                        <p class="text-dark">09AM - 09PM</p>
+                        <h5 class="text-dark fw-normal">Sunday</h5>
+                        <p class="text-dark">10AM - 08PM</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
+                    <div class="col-lg-3 col-md-6"
+                        style="height: 250px; background-image: url('img/EAGLE\ EYED\ EXPEDITIONS.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
+
                     </div>
                 </div>
             </div>
@@ -205,11 +436,10 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
-                            Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
