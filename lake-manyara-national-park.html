@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lake Manyara National Park - Eagle Eye Expeditions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/sunsive" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .font {
+            font-family: 'Sunsive', sans-serif;
+            font-weight: 600;
+        }
+
+        .font1 {
+            font-family: 'Sunsive', sans-serif;
+        }
+
+        .image-hover-wrapper {
+            height: 70vh;
+            overflow: hidden;
+        }
+
+        .hover-item {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            transition: flex 0.6s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hover-item::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .hover-item:hover {
+            flex: 4;
+        }
+
+        .hover-item:hover .hover-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hover-content {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            color: #fff;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.4s ease;
+        }
+
+        .hover-content h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .tour-card {
+            position: relative;
+            height: 420px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .tour-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+        }
+
+        .tour-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .wishlist {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, .25);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .tour-info {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            right: 25px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* FEATURE POST */
+        .blog-feature {
+            position: relative;
+            display: block;
+            height: 420px;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .blog-feature img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .blog-feature::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, .15));
+        }
+
+        .blog-overlay {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            right: 30px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .blog-overlay h2 {
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        /* SIDE POSTS */
+        .blog-side img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .blog-side h6 {
+            font-weight: 600;
+            line-height: 1.3;
+            color: #b66a2c;
+        }
+
+        .read-time {
+            font-size: 13px;
+            color: #777;
+        }
+
+        /* AUTHORS */
+        .author,
+        .author-sm {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .author img,
+        .author-sm img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+        }
+
+        .hero-title {
+            font-size: 70px;
+            padding-top: 50px;
+        }
+
+        .book-btn {
+            margin-left: 100px;
+        }
+
+        .div {
+            width: 800px;
+
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 50px;
+                padding-top: 20px;
+            }
+
+            .book-btn {
+                margin-left: 0;
+            }
+
+            .div {
+                width: 100%;
+            }
+        }
+
+        .media {
+            transform: rotate(-90deg);
+        }
+
+        /*** Hero Header ***/
+        .hero-header {
+            background: url('img/wildbeest\ \(1\).webp');
+            background-position: center 20%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 120vh;
+        }
+
+        @media (max-width: 767.98px) {
+            .hero-header {
+                background: url('img/zzebra.jpeg');
+                background-position: center 20%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 78vh;
+            }
+        }
+
+        .pagetitle {
+            margin-top: 40%;
+            font-size: 60px;
+        }
+
+        .itinerary-split {
+            position: relative;
+            height: 455px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .itinerary-split1 {
+            position: relative;
+            height: 455px;
+
+
+            background-size: cover;
+            background-position: center;
+            background-position-y: 25%;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .itinerary-split2 {
+            position: relative;
+            height: 455px;
+            background-size: contain;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* LEFT & RIGHT halves */
+        .day {
+
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            height: 40px;
+            color: #fff;
+
+        }
+
+        .left {
+            text-align: left;
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.35);
+            width: 40%;
+        }
+
+        .left1 {
+            text-align: left;
+            padding-top: 50px;
+            background: rgba(0, 0, 0, 0.35);
+            width: 40%;
+            height: 10px;
+        }
+
+        .right {
+            text-align: right;
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.35);
+            width: 40%;
+            margin-left: 280px;
+        }
+
+        /* 🔥 VERTICAL CENTER LINE */
+        .itinerary-split::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            /* full height */
+            left: 50%;
+            width: 10px;
+            /* thin line */
+            background: #fff;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .itinerary-split1::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            /* full height */
+            left: 50%;
+            width: 10px;
+            /* thin line */
+            background: #fff;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .itinerary-split2::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            /* full height */
+            left: 50%;
+            width: 10px;
+            /* thin line */
+            background: #fff;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+
+        @media (max-width: 768px) {
+            .itinerary-split {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+
+            .itinerary-split .day {
+                text-align: left;
+            }
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .gallery-item img {
+            transition: transform 0.4s ease;
+            height: 200px;
+            object-fit: cover;
+
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="img/EAGLE EYED EXPEDITIONS.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="div d-flex justify-content-between align-items-center">
+                        <div class="navbar-nav ms-5 py-0 pe-4 ">
+                            <a href="index.html" class="nav-item nav-link  font1 text-light">Home</a>
+                            <a href="about.html" class="nav-item nav-link font1">Safari itineraries</a>
+
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="booking.html" class="dropdown-item">Booking</a>
+                                    <a href="team.html" class="dropdown-item">Our Team</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                </div>
+                            </div>
+                            <a href="about.html" class="nav-item nav-link font1">Our Team</a>
+
+                            <a href="contact.html" class="nav-item nav-link font1">Contact</a>
+                        </div>
+                    </div>
+                    <a href="" class="btn rounded-3 btn-primary py-2 px-3 book-btn"
+                        style="background-color: #f5a900; text-transform: capitalize;">Book Now</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5"
+                style="background-image: url('img/Low Day 5&6.jpg');">
+                <div class="container  " style="margin-top: 100px;">
+                    <h1 class=" text-white text-center animated slideInDown font pagetitle">Lake Manyara National Park
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <h3 class=" font text-start text-primary fw-normal">
+                            Lake Manyara National Park – A Scenic Wildlife Gem in Tanzania
+                        </h3>
+
+                        <p class="mb-4">
+                            Nestled at the base of the Great Rift Valley escarpment, Lake Manyara National Park is one
+                            of Tanzania’s most diverse and picturesque safari destinations. Located just a short drive
+                            from Arusha, this compact yet rich park offers breathtaking landscapes, abundant wildlife,
+                            and unique safari experiences.</p>
+
+                        <h3 class=" font text-start text-primary fw-normal">Why Visit Ngorongoro National Park?</h3>
+
+                        <p class="mb-4">
+                            Lake Manyara National Park is renowned for its incredible biodiversity, blending lush
+                            groundwater forests, open plains, and an alkaline lake that dominates much of the landscape.
+                            Despite being smaller than Serengeti National Park, it offers an unforgettable safari
+                            experience with highlights such as dense forests of giant fig and mahogany trees, the rare
+                            and famous tree-climbing lions, large herds of elephants roaming freely, thousands of
+                            flamingos along the lake shores, and lively troops of baboons and blue monkeys.
+                        </p>
+
+
+                    </div>
+                    <div class="col-lg-6">
+                        <section class=" py-5">
+                            <div class="text-center mb-4">
+                                <h3 class="section-title font text-start text-primary fw-normal">Serengeti National Park
+                                    Gallery</h3>
+
+                            </div>
+
+                            <div class="row g-4">
+
+                                <!-- Image 1 -->
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="img/2nd 1&2.jpg" class="glightbox">
+                                        <div class="gallery-item">
+                                            <img src="img/2nd 1&2.jpg" class="img-fluid rounded w-100"
+                                                alt="Giraffe in Arusha National Park">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Image 2 -->
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="img/zebras-8403717_1280.jpg" class="glightbox">
+                                        <div class="gallery-item">
+                                            <img src="img/zebras-8403717_1280.jpg" class="img-fluid rounded w-100"
+                                                alt="Mount Meru view">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Image 3 -->
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="img/birding.jpeg" class="glightbox">
+                                        <div class="gallery-item">
+                                            <img src="img/birding.jpeg" class="img-fluid rounded w-100"
+                                                alt="Momella Lakes">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Image 4 -->
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="img/Family Day 2.jpg" class="glightbox">
+                                        <div class="gallery-item">
+                                            <img src="img/Family Day 2.jpg" class="img-fluid rounded w-100"
+                                                alt="Zebras in park">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Image 5 -->
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="img/birding-safari.jpeg" class="glightbox">
+                                        <div class="gallery-item">
+                                            <img src="img/birding-safari.jpeg" class="img-fluid rounded w-100"
+                                                alt="Colobus Monkey">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Image 6 -->
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="img/wild.jpeg" class="glightbox">
+                                        <div class="gallery-item">
+                                            <img src="img/wild.jpeg" class="img-fluid rounded w-100"
+                                                alt="Ngurdoto Crater">
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </section>
+                        <!-- <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s"
+                                    src="img/about-1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s"
+                                    src="img/about-2.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s"
+                                    src="img/about-3.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s"
+                                    src="img/about-4.jpg">
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-12">
+                        <h3 class=" font  text-primary fw-normal text-center mb-4">Top Activities in Lake Manyara
+                            National Park</h3>
+                        <div class="row mb-4">
+                            <div
+                                class="col-lg-3 col-md-6 d-flex flex-column align-items-center justify-content-between">
+                                <h5>1. Game Drives</h5>
+                                <p class="text-center">
+                                    Enjoy thrilling game drives through different ecosystems, from forests to open
+                                    grasslands.
+                                </p>
+                            </div>
+                            <div
+                                class="col-lg-3 col-md-6 d-flex flex-column align-items-center justify-content-between">
+                                <h5>2. Walking Safaris</h5>
+                                <p class="text-center">
+                                    Explore the park on foot with a professional guide for a closer connection to
+                                    nature.
+                                </p>
+                            </div>
+                            <div
+                                class="col-lg-3 col-md-6 d-flex flex-column align-items-center justify-content-between">
+                                <h5>3. Cycling Tours</h5>
+                                <p class="text-center">
+                                    Cycle along the park’s surroundings for a unique adventure.
+                                </p>
+                            </div>
+                            <div
+                                class="col-lg-3 col-md-6 d-flex flex-column align-items-center justify-content-between">
+                                <h5>4. Bird Watching</h5>
+                                <p class="text-center">
+                                    Spot rare and colorful bird species around the lake and forest areas.
+                                </p>
+                            </div>
+                        </div>
+                        <h3 class=" font  text-primary fw-normal text-start mb-2">Best Time to Visit Lake Manyara
+                            National Park</h3>
+
+                        <ul class="">
+                            <li><b>Dry Season (June to October)</b>: Best for wildlife viewing as animals gather near
+                                water sources.</li>
+                            <li><b>Wet Season (November to May)</b>: Perfect for birdwatching and lush green scenery.
+                            </li>
+                        </ul>
+                        <h3 class=" font  text-primary fw-normal text-start mb-2">Why Choose Lake Manyara for Your
+                            Safari?</h3>
+                        <p class="mb-4">Lake Manyara National Park offers a perfect introduction to Tanzania safaris.
+                            Its
+                            accessibility, diverse habitats, and unique wildlife make it a must-visit destination for
+                            travelers looking for a short yet rewarding safari experience.</p>
+                        <h3 class=" font  text-primary fw-normal text-start mb-2">Plan Your Lake Manyara Safari</h3>
+                        <p>
+                            Whether you are on a luxury safari or a budget adventure, Lake Manyara fits perfectly into
+                            Northern Circuit itineraries alongside Tarangire National Park and the Serengeti.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Team Start -->
+        <div class="container-fluid py-5" style="background-color: #fff5ee;">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title font text-center text-primary fw-normal">Safari</h5>
+                <h1 class="mb-5 font">Top Safari Packages</h1>
+            </div>
+            <div id="tourCarousel" class="carousel slide container" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+
+                            <div class="col-lg-4">
+                                <a href="/photograph-safari">
+                                    <div class="tour-card">
+                                        <img src="img/zzebra.jpeg">
+                                        <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                        <div class="tour-info">
+                                            <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                            <h4 class="text-white font">Photography Safari</h4>
+                                            <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                            <div class="meta">
+                                                <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                                <span class="price"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 ">
+                                <a href="/birding-safari">
+                                    <div class="tour-card">
+                                        <img src="img/birding.jpeg">
+                                        <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                        <div class="tour-info">
+                                            <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                            <h4 class="text-white font">Birding Safari</h4>
+                                            <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                            <div class="meta">
+                                                <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                                <span class="price"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 ">
+                                <a href="/serengeti-great-migration-safari">
+                                    <div class="tour-card">
+                                        <img src="img/masai-mara.jpeg">
+                                        <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                        <div class="tour-info">
+                                            <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                            <h4 class="text-white font">Great Serengeti Migration Safari</h4>
+                                            <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                            <div class="meta">
+                                                <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                                <span class="price"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="/family-safari">
+                                    <div class="tour-card">
+                                        <img src="img/family.jpeg">
+                                        <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                        <div class="tour-info">
+                                            <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                            <h4 class="text-white font">Family Safaris</h4>
+                                            <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                            <div class="meta">
+                                                <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                                <span class="price"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 ">
+                                <a href="/couple-safari">
+                                    <div class="tour-card">
+                                        <img src="img/DC_1941.jpg" style="object-fit: cover;">
+                                        <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                        <div class="tour-info">
+                                            <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                            <h4 class="text-white font">Couple Safaris</h4>
+                                            <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                            <div class="meta">
+                                                <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                                <span class="price"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 ">
+                                <a href="/cultural-and-musical-safari">
+                                    <div class="tour-card">
+                                        <img src="img/Cultural Overview 2.jpg">
+                                        <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+                                        <div class="tour-info">
+                                            <span class="location"><i class="fa fa-location-dot"></i> Tanzania</span>
+                                            <h4 class="text-white font">Cultural Safaris</h4>
+                                            <div class="rating">★★★★☆ <small>5 of 1 review</small></div>
+                                            <div class="meta">
+                                                <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                                                <span class="price"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!--blog-->
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title font1 text-center text-primary fw-normal">Newsletter</h5>
+                <h1 class="mb-5">Our Blog</h1>
+            </div>
+            <div class="row g-4 align-items-start">
+
+                <!-- LEFT FEATURED POST -->
+                <div class="col-lg-7">
+                    <a href="#" class="blog-feature">
+                        <img src="img/blog.jpeg" alt="">
+                        <div class="blog-overlay">
+                            <span class="read-time">2 Min Read</span>
+                            <h2 class="text-white font">Top 5 Safaris to Experience Before You Die</h2>
+                            <div class="author">
+                                <img src="img/EAGLE EYED EXPEDITIONS.png">
+                                <span>Logan Hall • 12 May, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- RIGHT POSTS -->
+                <div class="col-lg-5">
+
+                    <!-- ITEM -->
+                    <a href="#" class="blog-side d-flex mb-4">
+                        <img src="img/zzebra.jpeg">
+                        <div class="ms-3">
+                            <span class="read-time">2 Min Read</span>
+                            <h6 style="color: #f5a900;">Wooden Canoe Floating Between Dense Mangrove Roots</h6>
+                            <div class="author-sm">
+                                <img src="img/EAGLE EYED EXPEDITIONS.png">
+                                <span>Logan Hall • 12 May, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- ITEM -->
+                    <a href="#" class="blog-side d-flex mb-4">
+                        <img src="img/birding-safari.jpeg">
+                        <div class="ms-3">
+                            <span class="read-time">2 Min Read</span>
+                            <h6 style="color: #f5a900;">Backpack Laid Out With Compass, Boots, Insect Repellent</h6>
+                            <div class="author-sm">
+                                <img src="img/EAGLE EYED EXPEDITIONS.png">
+                                <span>Aston Hall • 12 May, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- ITEM -->
+                    <a href="#" class="blog-side d-flex">
+                        <img src="img/wolves.jpeg">
+                        <div class="ms-3">
+                            <span class="read-time">2 Min Read</span>
+                            <h6 style="color: #f5a900;">Night in the Wild: Camping With Lions Roaring Nearby</h6>
+                            <div class="author-sm">
+                                <img src="img/EAGLE EYED EXPEDITIONS.png">
+                                <span>Logan Hall • 12 May, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--blog-->
+
+        <!-- Footer Start -->
+        <div class="container-fluid  text-light footer pt-5 mt-5 wow fadeIn" style="background-color: #ec4b00;"
+            data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title font text-start text-white fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link text-dark" href="">About Us</a>
+                        <a class="btn btn-link text-dark" href="">Contact Us</a>
+                        <a class="btn btn-link text-dark" href="">Reservation</a>
+                        <a class="btn btn-link text-dark" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-dark" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title font text-start text-white fw-normal mb-4">Contact</h4>
+                        <p class="mb-2 text-dark"><i class="fa fa-map-marker-alt me-3 text-dark"></i>123 Street, New
+                            York, USA</p>
+                        <p class="mb-2 text-dark"><i class="fa fa-phone-alt me-3 text-dark"></i>+012 345 67890</p>
+                        <p class="mb-2 text-dark"><i class="fa fa-envelope me-3 text-dark"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-twitter text-dark"></i></a>
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-facebook-f text-dark"></i></a>
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-youtube text-dark"></i></a>
+                            <a class="btn btn-outline-dark btn-social text-dark" href=""><i
+                                    class="fab fa-linkedin-in text-dark"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title font text-start text-white fw-normal mb-4">Opening</h4>
+                        <h5 class="text-dark fw-normal">Monday - Saturday</h5>
+                        <p class="text-dark">09AM - 09PM</p>
+                        <h5 class="text-dark fw-normal">Sunday</h5>
+                        <p class="text-dark">10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6"
+                        style="height: 250px; background-image: url('img/EAGLE\ EYED\ EXPEDITIONS.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
+    </script>
+</body>
+
+</html>
