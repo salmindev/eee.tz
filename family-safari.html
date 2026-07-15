@@ -696,15 +696,15 @@
                                         src="img/leopard1.jpeg"
                                         style="height: 330px; object-fit: cover;">
                                 </div> -->
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6 d-none d-md-block">
                                     <div class=" picha" style="background-image: url('img/Family\ Day\ 1.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
                                         <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 4px;">
                                         <span class="day-label fw-bold fs-5 text-white">Day 01</span>
-                                        <p class="text-light">Arrival in Arusha for 1 night.</p>
+                                       <p class="text-light">Arrival in Arusha for 1 night.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-6 text-end " >
+                                <div class="col-md-6 col-sm-6 text-end d-none d-md-block" >
                                     
                                         <div class="" style="background-image: url('img/Family\ Day\ 2.jpg'); background-position: center; background-position-y: -400px; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
                                             <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 135px;">
@@ -712,6 +712,21 @@
                                             <p class="text-light">After Breakfast Drive to Tarangire N.P for 2 Nights.</p>
                                             </div>
                                         </div>    
+                                </div>
+                                <div class="itinerary-split1 d-sm-block d-md-none"
+                                    style="background-image: url('img/Family\ Day\ 1.jpg'); background-position-y:-100px; background-repeat: no-repeat; background-size: cover;">
+                                    <div class="day left">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 01</span>
+                                        <p class="text-light">
+                                            Arrival in Arusha for 1 night.
+                                        </p>
+                                    </div>
+
+                                    <div class="day right">
+                                        <span class="day-label fw-bold fs-5 text-white">Day 02</span>
+                                        <p class="text-light">After Breakfast Drive to Tarangire N.P for 2 Nights.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <!--  <div class="row gx-2">
@@ -839,6 +854,112 @@
                         </div>
 
 
+                    </div>
+                    <div id="demo" class="container">
+
+                        <form action="#" method="POST">
+                            <div class="row g-3">
+                        
+                                <!-- Tour Name -->
+                                <div class="col-12">
+                                    <h2 class="form-label text-center">Book This Tour Package</h2>
+                                    <input type="hidden" class="form-control" name="tour_name"
+                                        value="Family Safari" readonly>
+                                </div>
+                        
+                                <!-- Personal Details -->
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" name="name" required>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" name="email" required>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone / WhatsApp *</label>
+                                    <input type="tel" class="form-control" name="phone" required>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <label class="form-label">Country *</label>
+                                    <input type="text" class="form-control" name="country" required>
+                                </div>
+                        
+                                <!-- Travel Details -->
+                                <div class="col-md-6">
+                                    <label class="form-label">Arrival Date *</label>
+                                    <input type="date" class="form-control" name="arrival_date" required>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <label class="form-label">Departure Date *</label>
+                                    <input type="date" class="form-control" name="departure_date" required>
+                                </div>
+                        
+                                <div class="col-md-4">
+                                    <label class="form-label">Adults *</label>
+                                    <input type="number" class="form-control" name="adults" min="1" value="2" required>
+                                </div>
+                        
+                                <div class="col-md-4">
+                                    <label class="form-label">Children</label>
+                                    <input type="number" class="form-control" name="children" min="0" value="0">
+                                </div>
+                        
+                                <div class="col-md-4">
+                                    <label class="form-label">Accommodation</label>
+                                    <select class="form-select" name="accommodation">
+                                        <option>Budget</option>
+                                        <option selected>Mid-range</option>
+                                        <option>Luxury</option>
+                                    </select>
+                                </div>
+                        
+                                <!-- Airport Pickup -->
+                                <div class="col-md-6">
+                                    <label class="form-label">Airport Pickup Required?</label>
+                                    <select class="form-select" name="airport_pickup">
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    </select>
+                                </div>
+                        
+                                <!-- Flight -->
+                                <div class="col-md-6">
+                                    <label class="form-label">Flight Details (Optional)</label>
+                                    <input type="text" class="form-control" name="flight"
+                                        placeholder="Arrival Flight Number">
+                                </div>
+                        
+                                <!-- Requests -->
+                                <div class="col-12">
+                                    <label class="form-label">Special Requests</label>
+                                    <textarea class="form-control" rows="4" name="message"
+                                        placeholder="Dietary requirements, honeymoon, children's ages, special requests..."></textarea>
+                                </div>
+                        
+                                <!-- Agreement -->
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" required>
+                                        <label class="form-check-label">
+                                            I agree to the booking terms and privacy policy.
+                                        </label>
+                                    </div>
+                                </div>
+                        
+                                <!-- Submit -->
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        Book This Tour
+                                    </button>
+                                </div>
+                        
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="tab-pane  fade" id="menu1">
@@ -983,6 +1104,112 @@
                         </div>
 
 
+                    </div>
+                    <div id="demo" class="container">
+
+                        <form action="#" method="POST">
+                            <div class="row g-3">
+                        
+                                <!-- Tour Name -->
+                                <div class="col-12">
+                                    <h2 class="form-label text-center">Book This Tour Package</h2>
+                                    <input type="hidden" class="form-control" name="tour_name"
+                                        value="Family Safari" readonly>
+                                </div>
+                        
+                                <!-- Personal Details -->
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" name="name" required>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" name="email" required>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone / WhatsApp *</label>
+                                    <input type="tel" class="form-control" name="phone" required>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <label class="form-label">Country *</label>
+                                    <input type="text" class="form-control" name="country" required>
+                                </div>
+                        
+                                <!-- Travel Details -->
+                                <div class="col-md-6">
+                                    <label class="form-label">Arrival Date *</label>
+                                    <input type="date" class="form-control" name="arrival_date" required>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <label class="form-label">Departure Date *</label>
+                                    <input type="date" class="form-control" name="departure_date" required>
+                                </div>
+                        
+                                <div class="col-md-4">
+                                    <label class="form-label">Adults *</label>
+                                    <input type="number" class="form-control" name="adults" min="1" value="2" required>
+                                </div>
+                        
+                                <div class="col-md-4">
+                                    <label class="form-label">Children</label>
+                                    <input type="number" class="form-control" name="children" min="0" value="0">
+                                </div>
+                        
+                                <div class="col-md-4">
+                                    <label class="form-label">Accommodation</label>
+                                    <select class="form-select" name="accommodation">
+                                        <option>Budget</option>
+                                        <option selected>Mid-range</option>
+                                        <option>Luxury</option>
+                                    </select>
+                                </div>
+                        
+                                <!-- Airport Pickup -->
+                                <div class="col-md-6">
+                                    <label class="form-label">Airport Pickup Required?</label>
+                                    <select class="form-select" name="airport_pickup">
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    </select>
+                                </div>
+                        
+                                <!-- Flight -->
+                                <div class="col-md-6">
+                                    <label class="form-label">Flight Details (Optional)</label>
+                                    <input type="text" class="form-control" name="flight"
+                                        placeholder="Arrival Flight Number">
+                                </div>
+                        
+                                <!-- Requests -->
+                                <div class="col-12">
+                                    <label class="form-label">Special Requests</label>
+                                    <textarea class="form-control" rows="4" name="message"
+                                        placeholder="Dietary requirements, honeymoon, children's ages, special requests..."></textarea>
+                                </div>
+                        
+                                <!-- Agreement -->
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" required>
+                                        <label class="form-check-label">
+                                            I agree to the booking terms and privacy policy.
+                                        </label>
+                                    </div>
+                                </div>
+                        
+                                <!-- Submit -->
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        Book This Tour
+                                    </button>
+                                </div>
+                        
+                            </div>
+                        </form>
                     </div>
                 </div>
 
@@ -1160,7 +1387,7 @@
 
 
         <!-- Team Start -->
-        <div class="container-xxl pt-5 pb-3" style="background-color: #ec4b00;">
+        <!-- <div class="container-xxl pt-5 pb-3" style="background-color: #ec4b00;">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title font1 text-center text-primary fw-normal">Team Members</h5>
@@ -1225,7 +1452,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Team End -->
 
 
@@ -1384,7 +1611,7 @@
                         <p class="mb-2 text-dark"><i class="fa fa-map-marker-alt me-3 text-dark"></i>Moshono Kati,
                             Arusha Tanzania</p>
                         <p class="mb-2 text-dark"><i class="fa fa-phone-alt me-3 text-dark"></i>+255 688 880 090</p>
-                        <p class="mb-2 text-dark"><i class="fa fa-envelope me-3 text-dark"></i>officialchaba@gmail.com
+                        <p class="mb-2 text-dark"><i class="fa fa-envelope me-3 text-dark"></i>info@eee.co.tz
                         </p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-dark btn-social text-dark" href=""><i
@@ -1414,7 +1641,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                            &copy; 2026 <a class="border-bottom" href="#">www.eee.co.tz</a>, All Right Reserved.
 
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 
