@@ -87,7 +87,7 @@
     margin-left: 25px;
     padding: 35px 0;
     font-size: 18px;
-    color: black !important;
+    color: black ;
  
     font-weight: 500;
     outline: none;
@@ -131,6 +131,9 @@
     .navbar-dark .navbar-brand img {
         max-height: 45px;
     }
+    .navbar-dark .navbar-nav .nav-link{
+        color: white;
+    }
 }
 
 @media (min-width: 992px) {
@@ -146,6 +149,12 @@
     .sticky-top.navbar-dark {
         position: fixed;
         background: #ec4b00 !important;
+    }
+    .nav-item a{
+        color: white;
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        color: white;
     }
     
 }
