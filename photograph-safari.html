@@ -3,10 +3,31 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Photograph Safari - Eagle Eye Expeditions</title>
+    <title>Tanzania Photography Safaris | 12-Day Wildlife Itinerary
+    </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Tanzania Photograph Safari" name="keywords">
+    <meta
+        content="Join a 12-day Tanzania photography safari designed for wildlife photographers, with expert guides, stunning landscapes and exceptional wildlife photo opportunities."
+        name="description">
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:title" content="Tanzania Photography Safaris | 12-Day Wildlife Itinerary">
+    <meta property="og:description"
+        content="Join a 12-day Tanzania photography safari designed for wildlife photographers, with expert guides, stunning landscapes and exceptional wildlife photo opportunities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eee.co.tz/tanzania-photography-safari">
+    <meta property="og:image" content="https://www.eee.co.tz/path-to-your-photography-safari-image.jpg">
+    <meta property="og:image:alt" content="Tanzania wildlife photography safari in the Serengeti">
+    <meta property="og:site_name" content="Eagle Eye Expeditions">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tanzania Photography Safaris | 12-Day Wildlife Itinerary">
+    <meta name="twitter:description"
+        content="Join a 12-day Tanzania photography safari designed for wildlife photographers, with expert guides, stunning landscapes and exceptional wildlife photo opportunities.">
+    <meta name="twitter:image" content="https://www.eee.co.tz/path-to-your-photography-safari-image.jpg">
+    <meta name="twitter:image:alt" content="Tanzania wildlife photography safari in the Serengeti">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -37,38 +58,29 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-    
-        html,
-        body {
-            overflow-x: hidden;
-        }
-    
         .font {
             font-family: 'Sunsive', sans-serif;
             font-weight: 600;
         }
-    
+
         .font1 {
             font-family: 'Sunsive', sans-serif;
         }
-    
+
         a {
             text-decoration: none;
             color: inherit;
         }
-    
+
         img {
             max-width: 100%;
             height: auto;
         }
-    
+
         /* =========================
            HERO SECTION
         ========================= */
-    
+
         .hero-header {
             background: url('img/Day 11 & 12.jpg');
             background-position: center;
@@ -77,39 +89,39 @@
             min-height: 100vh;
             height: auto;
         }
-    
+
         .hero-title {
             font-size: 70px;
             padding-top: 50px;
         }
-    
+
         .pagetitle {
             margin-top: 35%;
             font-size: 60px;
         }
-    
+
         .book-btn {
             margin-left: 100px;
         }
-    
+
         .div {
             width: 100%;
         }
-    
+
         .media {
             transform: rotate(-90deg);
         }
-    
+
         /* =========================
            IMAGE HOVER SECTION
         ========================= */
-    
+
         .image-hover-wrapper {
             height: 70vh;
             overflow: hidden;
             display: flex;
         }
-    
+
         .hover-item {
             flex: 1;
             background-size: cover;
@@ -118,23 +130,23 @@
             position: relative;
             cursor: pointer;
         }
-    
+
         .hover-item::after {
             content: "";
             position: absolute;
             inset: 0;
             background: rgba(0, 0, 0, 0.25);
         }
-    
+
         .hover-item:hover {
             flex: 4;
         }
-    
+
         .hover-item:hover .hover-content {
             opacity: 1;
             transform: translateY(0);
         }
-    
+
         .hover-content {
             position: absolute;
             bottom: 30px;
@@ -145,40 +157,40 @@
             transform: translateY(20px);
             transition: 0.4s ease;
         }
-    
+
         .hover-content h4 {
             font-size: 1.5rem;
             font-weight: 700;
         }
-    
+
         /* =========================
            TOUR CARD
         ========================= */
-    
+
         .tour-card {
             position: relative;
             height: 420px;
             border-radius: 16px;
             overflow: hidden;
         }
-    
+
         .tour-card img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.6s ease;
         }
-    
+
         .tour-card:hover img {
             transform: scale(1.1);
         }
-    
+
         .tour-card::after {
             content: "";
             position: absolute;
             inset: 0;
         }
-    
+
         .wishlist {
             position: absolute;
             top: 20px;
@@ -193,7 +205,7 @@
             color: #fff;
             z-index: 2;
         }
-    
+
         .tour-info {
             position: absolute;
             bottom: 25px;
@@ -202,17 +214,17 @@
             color: #fff;
             z-index: 2;
         }
-    
+
         .meta {
             display: flex;
             justify-content: space-between;
             font-size: 14px;
         }
-    
+
         /* =========================
            BLOG SECTION
         ========================= */
-    
+
         .blog-feature {
             position: relative;
             display: block;
@@ -220,13 +232,13 @@
             border-radius: 18px;
             overflow: hidden;
         }
-    
+
         .blog-feature img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-    
+
         .blog-feature::after {
             content: "";
             position: absolute;
@@ -235,7 +247,7 @@
                     rgba(0, 0, 0, .85),
                     rgba(0, 0, 0, .15));
         }
-    
+
         .blog-overlay {
             position: absolute;
             bottom: 30px;
@@ -244,30 +256,30 @@
             color: #fff;
             z-index: 2;
         }
-    
+
         .blog-overlay h2 {
             font-weight: 700;
             margin: 10px 0;
         }
-    
+
         .blog-side img {
             width: 90px;
             height: 90px;
             object-fit: cover;
             border-radius: 12px;
         }
-    
+
         .blog-side h6 {
             font-weight: 600;
             line-height: 1.3;
             color: #b66a2c;
         }
-    
+
         .read-time {
             font-size: 13px;
             color: #777;
         }
-    
+
         .author,
         .author-sm {
             display: flex;
@@ -275,18 +287,18 @@
             gap: 10px;
             font-size: 14px;
         }
-    
+
         .author img,
         .author-sm img {
             width: 28px;
             height: 28px;
             border-radius: 50%;
         }
-    
+
         /* =========================
            ITINERARY SECTION
         ========================= */
-    
+
         .itinerary-split,
         .itinerary-split1,
         .itinerary-split2 {
@@ -300,13 +312,13 @@
             justify-content: space-between;
             align-items: stretch;
         }
-    
+
         .itinerary-split2 {
             background-size: cover;
         }
-    
+
         /* CENTER LINE */
-    
+
         .itinerary-split::after,
         .itinerary-split1::after,
         .itinerary-split2::after {
@@ -320,7 +332,7 @@
             transform: translateX(-50%);
             z-index: 2;
         }
-    
+
         .day {
             width: 100%;
             padding: 40px;
@@ -331,29 +343,29 @@
             background: rgba(0, 0, 0, 0.35);
             z-index: 3;
         }
-    
+
         .left,
         .left1,
         .right {
             margin: 0;
         }
-    
+
         .left {
             text-align: left;
         }
-    
+
         .right {
             text-align: right;
         }
-    
+
         /* =========================
            MOBILE RESPONSIVE
         ========================= */
-    
+
         @media (max-width: 768px) {
-    
+
             /* HERO */
-    
+
             .hero-header {
                 background: url('img/zzebra.jpeg');
                 background-position: center;
@@ -361,145 +373,145 @@
                 background-size: cover;
                 min-height: 75vh;
             }
-    
+
             .hero-title {
                 font-size: 42px;
                 padding-top: 20px;
             }
-    
+
             .pagetitle {
                 margin-top: 55%;
                 font-size: 36px;
                 text-align: center;
             }
-    
+
             /* NAVBAR */
-    
+
             .book-btn {
                 margin-left: 0;
                 margin-top: 15px;
                 width: 100%;
             }
-    
+
             .div {
                 width: 100%;
                 flex-direction: column;
             }
-    
+
             /* IMAGE HOVER */
-    
+
             .image-hover-wrapper {
                 flex-direction: column;
                 height: auto;
             }
-    
+
             .hover-item {
                 height: 250px;
                 flex: unset;
             }
-    
+
             .hover-item:hover {
                 flex: unset;
             }
-    
+
             .hover-content {
                 opacity: 1;
                 transform: translateY(0);
                 bottom: 20px;
                 left: 20px;
             }
-    
+
             /* ITINERARY */
-    
+
             .itinerary-split,
             .itinerary-split1,
             .itinerary-split2 {
                 flex-direction: column;
                 min-height: auto;
             }
-    
+
             .itinerary-split::after,
             .itinerary-split1::after,
             .itinerary-split2::after {
                 display: none;
             }
-    
+
             .day {
                 width: 100%;
                 padding: 25px 20px;
                 text-align: left !important;
             }
-    
+
             .left,
             .left1,
             .right {
                 width: 100%;
             }
-    
+
             .day p {
                 font-size: 14px;
                 line-height: 1.6;
             }
-    
+
             /* BLOG */
-    
+
             .blog-feature {
                 height: 300px;
             }
-    
+
             .blog-overlay {
                 left: 20px;
                 right: 20px;
                 bottom: 20px;
             }
-    
+
             .blog-overlay h2 {
                 font-size: 1.4rem;
             }
-    
+
             .blog-side img {
                 width: 75px;
                 height: 75px;
             }
-    
+
             /* TEAM */
-    
+
             .team-item {
                 margin-bottom: 20px;
             }
         }
-    
+
         /* =========================
            SMALL PHONES
         ========================= */
-    
+
         @media (max-width: 480px) {
-    
+
             .pagetitle {
                 font-size: 30px;
                 margin-top: 65%;
             }
-    
+
             .hero-title {
                 font-size: 32px;
             }
-    
+
             .hover-item {
                 height: 220px;
             }
-    
+
             .day {
                 padding: 20px 15px;
             }
-    
+
             .day-label {
                 font-size: 18px !important;
             }
-    
+
             .day p {
                 font-size: 13px;
             }
-    
+
             .blog-overlay h2 {
                 font-size: 1.2rem;
             }
@@ -523,22 +535,35 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <img src="img/EAGLE EYED EXPEDITIONS.png" alt="Logo">
+                    <img src="img/EAGLE EYED EXPEDITIONS-3.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
+                    <span class="fa fa-bars text-white"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="div d-flex justify-content-between align-items-center">
                         <div class="navbar-nav ms-5 py-0 pe-4 ">
-                            <a href="index.html" class="nav-item nav-link  font1 text-light">Home</a>
-                            <a href="about.html" class="nav-item nav-link font1">Safari itineraries</a>
+                            <a href="/" class="nav-item nav-link  font1 text-light">Home</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Safari
+                                    itineraries</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="/birding-safari" class="dropdown-item">Birding Safari</a>
+                                    <a href="/couple-safari" class="dropdown-item">Couple Safari</a>
+                                    <a href="/cultural-and-musical-safari" class="dropdown-item">Cultural and Musical
+                                        Safari</a>
+                                    <a href="/family-safari" class="dropdown-item">Family Safari</a>
+                                    <a href="/low-season-safari" class="dropdown-item">Low Season Safari</a>
+                                    <a href="/photograph-safari" class="dropdown-item">Photograph Safari</a>
 
+                                </div>
+                            </div>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
                                 <div class="dropdown-menu m-0">
                                     <a href="/serengeti-national-park" class="dropdown-item">Serengeti National Park</a>
-                                    <a href="/lake-manyara-national-park" class="dropdown-item">Lake Manyara National Park</a>
+                                    <a href="/lake-manyara-national-park" class="dropdown-item">Lake Manyara National
+                                        Park</a>
                                     <a href="/ngorongoro-crater" class="dropdown-item">Ngorongoro Crater</a>
                                     <a href="/arusha-national-park" class="dropdown-item">Arusha National Park</a>
                                     <a href="/tarangire-national-park" class="dropdown-item">Tarangire National Park</a>
@@ -556,7 +581,10 @@
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container title-info py-5">
-                    <h1 class=" text-white text-center animated slideInDown font pagetitle">Photography Safari</h1>
+                    <h1 class=" text-white text-center animated slideInDown font pagetitle">Tanzania Photography
+                        Safaris: 12-Day Wildlife Photography Itinerary
+
+                    </h1>
 
                 </div>
             </div>
@@ -619,28 +647,32 @@
                         <h2 class="mb-4 font text-light text-center">
                             Overview
                         </h2>
-                        <p class="mb-4 font1 text-light" style="text-align: justify;">We provide Photography Safaris all
-                            year around, which may
-                            include Tarangire National Park, Ngorongoro Crater and Serengeti National Park, Or, only
-                            Serengeti in different parts of it. On these Photography Safaris we focus on getting actions
-                            from the Big Cats generally, Green Season Serengeti Great Migration time, Birding and what
-                            the photographers require to get during their Expeditions with us.</p>
-
-                        <p class="mb-4 text-light" style="text-align: justify;">
-                            The best time for this kind of photography is December to May, this is after and during the
-                            rains and also when the herds of the Great Serengeti Migration are in the south and East of
-                            Serengeti. Also it is when we have Migratory birds from Europe and Asia which make Birding
-                            even more interesting.
+                        <p class="mb-4 font1 text-light" style="text-align: justify;">
+                            Experience the ultimate <b>Tanzania photography safari</b> through some of Tanzania's most
+                            spectacular wildlife destinations. This carefully designed 12-day photography itinerary
+                            takes you from Arusha to the Ngorongoro Crater, Ndutu, Kusini Serengeti and Eastern
+                            Serengeti, giving photographers exceptional opportunities to capture big cats, the Great
+                            Migration, birds, landscapes and authentic African wildlife.
+                            Our <b>Tanzania photography safaris</b> are designed for photographers who want more than a
+                            traditional game drive. We focus on spending quality time in productive wildlife areas,
+                            finding photographic opportunities and allowing you to capture Tanzania's spectacular
+                            wildlife in the best possible light.
                         </p>
+                        
 
-                        <ul class="nav nav-tabs d-flex justify-content-center align-items-center border border-0">
+
+
+                        <ul class="nav nav-tabs d-flex justify-content-around align-items-center border border-0">
                             <li class="nav-item">
-                                <a class="nav-link active fw-bold btn rounded-3 btn-primary py-2 px-3 book-btn" data-bs-toggle="tab" href="#home">Itinerary 1</a>
+                                <a class="nav-link active fw-bold btn rounded-3 btn-primary py-2 px-3 book-btn"
+                                    data-bs-toggle="tab" href="#home">Itinerary 1</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fw-bold btn rounded-3 btn-primary py-2 px-3 book-btn" style="background-color: #f5a900;" data-bs-toggle="tab" href="#menu1">Itinerary 2</a>
+                                <a class="nav-link fw-bold btn rounded-3 btn-primary py-2 px-3 book-btn"
+                                    style="background-color: #f5a900;" data-bs-toggle="tab" href="#menu1">Itinerary
+                                    2</a>
                             </li>
-        
+
                         </ul>
 
                         <!-- <div class="row g-4 mb-4">
@@ -675,11 +707,11 @@
         <!--itineraries-->
         <div class="container-fluid py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                
+
             </div>
             <div class="container align-items-center">
                 <!-- Nav tabs -->
-              <!--   <ul class="nav nav-tabs">
+                <!--   <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link active fw-bold btn rounded-3 btn-primary py-2 px-3 book-btn" data-bs-toggle="tab" href="#home">OPTION 1</a>
                     </li>
@@ -695,24 +727,46 @@
                         <div class="row">
                             <div class="col-lg-12 py-5 ">
                                 <div class="row gx-2 mb-4 ">
-                                    <!--  <div class="col-12 text-start">
-                                        <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
-                                            src="img/leopard1.jpeg"
-                                            style="height: 330px; object-fit: cover;">
-                                    </div> -->
-                                    <div class="itinerary-split">
+                                   <h2 class="text-center">Tanzania Photography Safari at a Glance</h2>
+                                   <p class="text-dark text-center">
+                                    <b> Duration</b>: 12 Days / 11 Nights
+                                    Destination: Northern Tanzania<br><br>
+                                    <b>Best for</b>: Wildlife photographers, bird photographers, nature photographers and
+                                    photography enthusiasts<br><br>
+                                    <b>Main destinations</b>: Arusha, Ngorongoro Crater, Ndutu, Kusini Serengeti and Eastern
+                                    Serengeti<br><br>
+                                    <b>Photography highlights</b>: Big cats, Great Migration, predators, birds, landscapes and
+                                    wildlife action<br><br>
+                                    <b>Best photography season</b>: December to May
+        
+                                </p>
+                                    <div class="itinerary-split" style="background-image: url('img/lion.jpeg')">
                                         <div class="day left">
                                             <span class="day-label fw-bold fs-5">Day 01</span>
-                                            <p>Arrival in Arusha – 1 night</p>
+                                            <p>Arrive in Arusha, the gateway to Tanzania's northern safari circuit.
+                                                After meeting your safari team, transfer to your accommodation and relax
+                                                before your Tanzania photography safari begins.
+                                                Use the evening to prepare your camera equipment, memory cards and
+                                                batteries for the days ahead.<br><br>
+                                                <b>Overnight</b>: Arusha
+                                            </p>
                                         </div>
 
                                         <div class="day right">
-                                            <span class="day-label fw-bold fs-5">Day 02</span>
-                                            <p>Drive to Ngorongoro Crater Rim for 1 Night. </p>
+                                            <span class="day-label fw-bold fs-5">Day 2: Arusha to Ngorongoro
+                                                Crater</span>
+                                            <p>After breakfast, begin your journey toward the Ngorongoro Conservation
+                                                Area and continue to the Ngorongoro Crater Rim.
+                                                The dramatic scenery along the way provides opportunities for landscape
+                                                photography. As you approach the crater, the changing light and
+                                                expansive views create excellent opportunities for wide-angle landscape
+                                                images.<br><br>
+                                                <b>Overnight</b>: Ngorongoro Crater Rim
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                               <!--  <div class="row gx-2">
+                                <!--  <div class="row gx-2">
                                 <div class="col-6 ">
                                     <div class=" picha" style="background-image: url('img/sunset-chui.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
                                         <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 4px;">
@@ -737,15 +791,34 @@
                                             src="img/leopard1.jpeg"
                                             style="height: 330px; object-fit: cover;">
                                     </div> -->
-                                    <div class="itinerary-split1" style="background-image: url('img/sunset-chui.jpeg');">
+                                    <div class="itinerary-split1"
+                                        style="background-image: url('img/sunset-chui.jpeg');">
                                         <div class="day left">
-                                            <span class="day-label fw-bold fs-5">Day 03</span>
-                                            <p>A Morning in the Crater then Drive to Ndutu for 3 Nights.</p>
+                                            <span class="day-label fw-bold fs-5">Day 3: Ngorongoro Crater Photography &
+                                                Journey to Ndutu</span>
+                                            <p>Start the day with a morning game drive inside the Ngorongoro Crater. The
+                                                crater's concentration of wildlife provides opportunities to photograph
+                                                lions, elephants, buffalo, zebras, wildebeest and other species in a
+                                                spectacular natural setting.
+                                                After your crater experience, continue toward Ndutu, an important
+                                                wildlife and photography area between the Serengeti ecosystem and
+                                                Ngorongoro Conservation Area.<br><br>
+                                                <b>Overnight</b>: Ndutu
+                                            </p>
                                         </div>
 
                                         <div class="day right">
-                                            <span class="day-label fw-bold fs-5">Day 04</span>
-                                            <p>Full Day in Ndutu.</p>
+                                            <span class="day-label fw-bold fs-5">Day 4: Full-Day Wildlife Photography in
+                                                Ndutu</span>
+                                            <p>Spend a full day photographing wildlife around Ndutu.
+                                                This area is particularly attractive to wildlife photographers because
+                                                of its open landscapes, abundant wildlife and opportunities to observe
+                                                predator-prey interactions.
+                                                Your photography guide will help position the safari vehicle for
+                                                suitable viewing and photography opportunities while maintaining
+                                                responsible wildlife-viewing practices.<br><br>
+                                                <b>Overnight</b>: Ndutu
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -755,165 +828,218 @@
                                             src="img/leopard1.jpeg"
                                             style="height: 330px; object-fit: cover;">
                                     </div> -->
-                                    <div class="itinerary-split2" style="background-image: url('img/chaba-porini-new/zebara.jpg');">
+                                    <div class="itinerary-split2"
+                                        style="background-image: url('img/chaba-porini-new/zebara.jpg');">
                                         <div class="day left">
-                                            <span class="day-label fw-bold fs-5">Day 05</span>
-                                            <p>Full Day in Ndutu.</p>
+                                            <span class="day-label fw-bold fs-5">Day 5: Full-Day Photography Safari in
+                                                Ndutu</span>
+                                            <p>Continue exploring Ndutu with another full day dedicated to wildlife
+                                                photography.
+                                                Depending on the season and wildlife movements, photography
+                                                opportunities may include big cats, wildebeest, zebras, giraffes, birds
+                                                and other wildlife.
+                                                Early mornings and late afternoons are particularly valuable for
+                                                photographers because of the softer natural light and atmospheric
+                                                conditions.<br><br>
+                                                <b>Overnight</b>: Ndutu
+                                            </p>
                                         </div>
 
                                         <div class="day right">
-                                            <span class="day-label fw-bold fs-5">Day 06</span>
-                                            <p>Drive to Kusini Serengeti for 3 Nights.</p>
+                                            <span class="day-label fw-bold fs-5">Day 6: Ndutu to Kusini Serengeti</span>
+                                            <p>After breakfast, travel toward Kusini in the southern Serengeti.
+                                                The southern Serengeti is known for its expansive plains and
+                                                wildlife-rich habitats. The journey itself can provide opportunities for
+                                                wildlife and landscape photography.
+                                                Arrive at your camp and prepare for the following full days of
+                                                photography in the Serengeti.<br><br>
+                                                <b>Overnight</b>: Kusini Serengeti
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row gx-2">
-                                    <div class="col-sm-6 col-md-6  d-none d-md-block">
-                                        <div class=" picha" style="background-image: url('img/chaba-porini-new/kusini.jpg'); background-position: -105px 80%; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
-                                            <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 4px;">
-                                            <span class="day-label fw-bold fs-5 text-white">Day 07</span>
-                                            <p class="text-light">Full Day in Kusini Serengeti.</p>
-                                            </div>
+                                <div class="row gx-2 mb-4 ">
+                                    <!--  <div class="col-12 text-start">
+                                        <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
+                                            src="img/leopard1.jpeg"
+                                            style="height: 330px; object-fit: cover;">
+                                    </div> -->
+                                    <div class="itinerary-split2"
+                                        style="background-image: url('img/chaba-porini-new/kusini.jpg');">
+                                        <div class="day left">
+                                            <span class="day-label fw-bold fs-5">Day 7: Full-Day Photography Safari in
+                                                Kusini Serengeti
+                                            </span>
+                                            <p>Spend a full day exploring Kusini Serengeti.
+                                                This is an opportunity to concentrate on wildlife photography without
+                                                rushing between destinations. Look for lions, cheetahs, leopards,
+                                                wildebeest, zebras, birds and other wildlife.
+                                                Your guide will help identify promising photography opportunities and
+                                                work with you to make the most of changing light and wildlife
+                                                behavior.<br><br>
+                                                <b>Overnight</b>: Kusini Serengeti
+
+                                            </p>
+                                        </div>
+
+                                        <div class="day right">
+                                            <span class="day-label fw-bold fs-5">Day 8: Full-Day Wildlife Photography in
+                                                Kusini</span>
+                                            <p>Enjoy another full day in Kusini Serengeti.
+                                                Use the day to refine your wildlife photography techniques and capture
+                                                different subjects, compositions and behaviors. From intimate wildlife
+                                                portraits to dramatic landscape images, the Serengeti provides an
+                                                extraordinary variety of photographic subjects.<br><br>
+                                                <b>Overnight</b>: Kusini Serengeti
+
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-6 text-end  d-none d-md-block" >
-                                        
-                                            <div class="" style="background-image: url('img/chaba-porini-new/kusini1.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
-                                                <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 135px;">
-                                               <span class="day-label fw-bold fs-5 text-white">Day 08</span>
-                                                <p class="text-light">Full Day in Kusini Serengeti.</p>
-                                                </div>
-                                            </div>    
-                                    </div>
-                                    <div class="itinerary-split1 d-sm-block d-md-none"
-                                    style="background-image: url('img/chaba-porini-new/kusini1.jpg'); background-position-y:-100px; background-repeat: no-repeat; background-size: cover;">
-                                    <div class="day left">
-                                        <span class="day-label fw-bold fs-5 text-white">Day 07</span>
-                                        <p class="text-light">
-                                            Full Day in Kusini Serengeti.
-                                        </p>
-                                    </div>
-    
                                 </div>
-                              
-                                <div class="day right">
-                                    <span class="day-label fw-bold fs-5 text-white">Day 08</span>
-                                    <p class="text-light">Full Day in Kusini Serengeti.
-                                    </p>
-                                </div>
-                            </div>
-                                    <div class="row gx-2 mt-4 mb-4 ">
-                                        <!--  <div class="col-12 text-start">
+
+                                <div class="row gx-2 mt-4 mb-4 ">
+                                    <!--  <div class="col-12 text-start">
                                             <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
                                                 src="img/leopard1.jpeg"
                                                 style="height: 330px; object-fit: cover;">
                                         </div> -->
-                                        <div class="itinerary-split1" style="background-image: url('img/chaba-porini-new/lion-kusini.jpg'); background-position-y: 80%;">
-                                            <div class="day left">
-                                                <span class="day-label fw-bold fs-5">Day 09</span>
-                                                <p>Drive to Eastern Serengeti for 3 Nights.</p>
-                                            </div>
-    
-                                            <div class="day right">
-                                                <span class="day-label fw-bold fs-5">Day 10</span>
-                                                <p>Full Day in Eastern Serengeti.</p>
-                                            </div>
+                                    <div class="itinerary-split1"
+                                        style="background-image: url('img/chaba-porini-new/lion-kusini.jpg'); background-position-y: 80%;">
+                                        <div class="day left">
+                                            <span class="day-label fw-bold fs-5">Day 9: Kusini to Eastern
+                                                Serengeti</span>
+                                            <p>Travel toward the Eastern Serengeti, exploring the changing landscapes
+                                                and wildlife habitats along the way.
+                                                The Eastern Serengeti provides a different photographic environment from
+                                                the southern plains, offering opportunities to photograph wildlife in
+                                                diverse landscapes.
+                                                Arrive at your accommodation and prepare for two more full days of
+                                                photography.<br><br>
+                                                <b>Overnight</b>: Eastern Serengeti
+                                            </p>
                                         </div>
-                                    </div>
 
-                                    <div class="row gx-2">
-                                        <div class="col-sm-6 col-md-6">
-                                            <div class=" picha" style="background-image: url('img/cheetah.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 400px;">
-                                                <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 4px;">
-                                                <span class="day-label fw-bold fs-5 text-white">Day 11</span>
-                                                <p class="text-light">Full Day in Eastern Serengeti.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 text-end d-none d-md-block" >
-                                            
-                                                <div class="" style="background-image: url('img/chaba-porini-new/elephant.jpg'); background-position: center; background-repeat: no-repeat; background-size: 100% 80%; height: 400px;">
-                                                    <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 135px;">
-                                                    <span class="day-label fw-bold fs-5 text-white">Day 12</span>
-                                                    <p class="text-light">Breakfast at the camp, Drive to the Airport then Fly out From Central Serengeti Airstrip. </p>
-                                                    </div>
-                                                </div>    
-                                        </div>
-                                        <div class="itinerary-split1 d-sm-block d-md-none"
-                                    style="background-image: url('img/chaba-porini-new/elephant.jpg'); background-position-y:-100px; background-repeat: no-repeat; background-size: cover;">
-                                    <div class="day left">
-                                        <span class="day-label fw-bold fs-5 text-white">Day 11</span>
-                                        <p class="text-light">
-                                            Full Day in Eastern Serengeti.
-                                        </p>
-                                    </div>
+                                        <div class="day right">
+                                            <span class="day-label fw-bold fs-5">Day 10: Full-Day Photography Safari in
+                                                Eastern Serengeti</span>
+                                            <p>Spend a full day photographing the wildlife and landscapes of Eastern
+                                                Serengeti.
+                                                Depending on seasonal conditions and wildlife movements, photographers
+                                                may encounter predators, herbivores, birds and a variety of other
+                                                wildlife.
+                                                Take advantage of the full-day schedule to spend more time waiting for
+                                                and photographing natural behavior rather than simply moving from one
+                                                sighting to another.<br><br>
 
-                                    <div class="day right">
-                                        <span class="day-label fw-bold fs-5 text-white">Day 12</span>
-                                        <p class="text-light">Breakfast at the camp, Drive to the Airport then Fly out From Central Serengeti Airstrip.
-                                        </p>
+                                                <b>Overnight</b>: Eastern Serengeti
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <div class="row gx-2 mt-4 mb-4">
+                                   
+                                    
+                                    <div class="itinerary-split1"
+                                        style="background-image: url('img/chaba-porini-new/elephant.jpg'); background-position-y:-100px; background-repeat: no-repeat; background-size: cover;">
+                                        <div class="day left">
+                                            <span class="day-label fw-bold fs-5 text-white">Day 11: Full-Day Wildlife
+                                                Photography in Eastern Serengeti</span>
+                                            <p class="text-light">
+                                                Enjoy your final full day of wildlife photography in the Eastern
+                                                Serengeti.
+                                                This is your opportunity to capture additional images of the animals and
+                                                landscapes you have encountered throughout the safari. Your guide can
+                                                help you search for new subjects and make the most of the final golden
+                                                hours in the Serengeti.<br><br>
+                                                <b>Overnight</b>: Eastern Serengeti
+
+                                            </p>
+                                        </div>
+
+                                        <div class="day right">
+                                            <span class="day-label fw-bold fs-5 text-white">Day 12: Serengeti
+                                                Departure</span>
+                                            <p class="text-light">Enjoy breakfast at camp before your transfer to the
+                                                airport.
+                                                Depending on your flight arrangements, depart from a Serengeti airstrip
+                                                for your onward journey.
+                                                Your <b>Tanzania photography safari</b> ends with thousands of memories—and
+                                                hopefully a collection of unforgettable African wildlife photographs.
+
+                                            </p>
+                                        </div>
                                     </div>
+                                </div>
 
                             </div>
-                       
+    
+                            <h2 class="text-center">Why Choose Our Tanzania Photography Safaris?</h2>
+                            <p>
+                                Our photography safaris are designed specifically for guests who want to concentrate on wildlife photography while exploring Tanzania.
+                            </p>
+                            <ul>
+                               <li>Experienced English-speaking safari guides</li>
+                               <li>Safari vehicles designed with photographers in mind</li>
+                             
+                            </ul>
 
                         </div>
                         <div id="demo" class="container">
 
                             <form action="#" method="POST">
                                 <div class="row g-3">
-                            
+
                                     <!-- Tour Name -->
                                     <div class="col-12">
                                         <h2 class="form-label text-center">Book This Tour Package</h2>
                                         <input type="hidden" class="form-control" name="tour_name"
                                             value="Photograph Safari" readonly>
                                     </div>
-                            
+
                                     <!-- Personal Details -->
                                     <div class="col-md-6">
                                         <label class="form-label">Full Name *</label>
                                         <input type="text" class="form-control" name="name" required>
                                     </div>
-                            
+
                                     <div class="col-md-6">
                                         <label class="form-label">Email Address *</label>
                                         <input type="email" class="form-control" name="email" required>
                                     </div>
-                            
+
                                     <div class="col-md-6">
                                         <label class="form-label">Phone / WhatsApp *</label>
                                         <input type="tel" class="form-control" name="phone" required>
                                     </div>
-                            
+
                                     <div class="col-md-6">
                                         <label class="form-label">Country *</label>
                                         <input type="text" class="form-control" name="country" required>
                                     </div>
-                            
+
                                     <!-- Travel Details -->
                                     <div class="col-md-6">
                                         <label class="form-label">Arrival Date *</label>
                                         <input type="date" class="form-control" name="arrival_date" required>
                                     </div>
-                            
+
                                     <div class="col-md-6">
                                         <label class="form-label">Departure Date *</label>
                                         <input type="date" class="form-control" name="departure_date" required>
                                     </div>
-                            
+
                                     <div class="col-md-4">
                                         <label class="form-label">Adults *</label>
-                                        <input type="number" class="form-control" name="adults" min="1" value="2" required>
+                                        <input type="number" class="form-control" name="adults" min="1" value="2"
+                                            required>
                                     </div>
-                            
+
                                     <div class="col-md-4">
                                         <label class="form-label">Children</label>
                                         <input type="number" class="form-control" name="children" min="0" value="0">
                                     </div>
-                            
+
                                     <div class="col-md-4">
                                         <label class="form-label">Accommodation</label>
                                         <select class="form-select" name="accommodation">
@@ -922,7 +1048,7 @@
                                             <option>Luxury</option>
                                         </select>
                                     </div>
-                            
+
                                     <!-- Airport Pickup -->
                                     <div class="col-md-6">
                                         <label class="form-label">Airport Pickup Required?</label>
@@ -931,21 +1057,21 @@
                                             <option>No</option>
                                         </select>
                                     </div>
-                            
+
                                     <!-- Flight -->
                                     <div class="col-md-6">
                                         <label class="form-label">Flight Details (Optional)</label>
                                         <input type="text" class="form-control" name="flight"
                                             placeholder="Arrival Flight Number">
                                     </div>
-                            
+
                                     <!-- Requests -->
                                     <div class="col-12">
                                         <label class="form-label">Special Requests</label>
                                         <textarea class="form-control" rows="4" name="message"
                                             placeholder="Dietary requirements, honeymoon, children's ages, special requests..."></textarea>
                                     </div>
-                            
+
                                     <!-- Agreement -->
                                     <div class="col-12">
                                         <div class="form-check">
@@ -955,14 +1081,14 @@
                                             </label>
                                         </div>
                                     </div>
-                            
+
                                     <!-- Submit -->
                                     <div class="col-12 text-center">
                                         <button type="submit" class="btn btn-primary btn-lg px-5">
                                             Book This Tour
                                         </button>
                                     </div>
-                            
+
                                 </div>
                             </form>
                         </div>
@@ -988,7 +1114,7 @@
                                         </div>
                                     </div>
                                 </div>
-                               <!--  <div class="row gx-2">
+                                <!--  <div class="row gx-2">
                                <div class="col-6 ">
                                     <div class=" picha" style="background-image: url('img/sunset-chui.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 445px; border-radius: 20px;">
                                         <div class="px-3" style="height: 80px; background-color: rgba(11, 11, 11, 0.454);width: 75%; padding-top: 10px; position: relative; top: 50px; left: 4px;">
@@ -1013,7 +1139,8 @@
                                             src="img/leopard1.jpeg"
                                             style="height: 330px; object-fit: cover;">
                                     </div> -->
-                                    <div class="itinerary-split1" style="background-image: url('img/Day 3 & 4.jpg.jpeg');">
+                                    <div class="itinerary-split1"
+                                        style="background-image: url('img/Day 3 & 4.jpg.jpeg');">
                                         <div class="day left">
                                             <span class="day-label fw-bold fs-5">Day 03</span>
                                             <p>Full Day in Western Serengeti.</p>
@@ -1031,7 +1158,8 @@
                                             src="img/leopard1.jpeg"
                                             style="height: 330px; object-fit: cover;">
                                     </div> -->
-                                    <div class="itinerary-split2" style="background-image: url('img/Day 5& 6.jpg.jpeg');">
+                                    <div class="itinerary-split2"
+                                        style="background-image: url('img/Day 5& 6.jpg.jpeg');">
                                         <div class="day left">
                                             <span class="day-label fw-bold fs-5">Day 05</span>
                                             <p>Drive to Eastern Serengeti for 3 Nights.</p>
@@ -1049,7 +1177,8 @@
                                             src="img/leopard1.jpeg"
                                             style="height: 330px; object-fit: cover;">
                                     </div> -->
-                                    <div class="itinerary-split2" style="background-image: url('img/Day 7 & 8.jpg.jpeg');">
+                                    <div class="itinerary-split2"
+                                        style="background-image: url('img/Day 7 & 8.jpg.jpeg');">
                                         <div class="day left">
                                             <span class="day-label fw-bold fs-5">Day 07</span>
                                             <p>Drive to Eastern Serengeti for 3 Nights.</p>
@@ -1061,122 +1190,126 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                    <div class="row gx-2 mt-4 mb-4 ">
-                                        <!--  <div class="col-12 text-start">
+
+                                <div class="row gx-2 mt-4 mb-4 ">
+                                    <!--  <div class="col-12 text-start">
                                             <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
                                                 src="img/leopard1.jpeg"
                                                 style="height: 330px; object-fit: cover;">
                                         </div> -->
-                                        <div class="itinerary-split1" style="background-image: url('img/Day 9 & 10.jpg.jpeg'); background-position-y: 80%;">
-                                            <div class="day left">
-                                                <span class="day-label fw-bold fs-5">Day 09</span>
-                                                <p>Full Day in Kusini Serengeti.</p>
-                                            </div>
-    
-                                            <div class="day right">
-                                                <span class="day-label fw-bold fs-5">Day 10</span>
-                                                <p>Full Day in Kusini Serengeti.</p>
-                                            </div>
+                                    <div class="itinerary-split1"
+                                        style="background-image: url('img/Day 9 & 10.jpg.jpeg'); background-position-y: 80%;">
+                                        <div class="day left">
+                                            <span class="day-label fw-bold fs-5">Day 09</span>
+                                            <p>Full Day in Kusini Serengeti.</p>
+                                        </div>
+
+                                        <div class="day right">
+                                            <span class="day-label fw-bold fs-5">Day 10</span>
+                                            <p>Full Day in Kusini Serengeti.</p>
                                         </div>
                                     </div>
-                                    <div class="row gx-2 mt-4 mb-4 ">
-                                        <!--  <div class="col-12 text-start">
+                                </div>
+                                <div class="row gx-2 mt-4 mb-4 ">
+                                    <!--  <div class="col-12 text-start">
                                             <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
                                                 src="img/leopard1.jpeg"
                                                 style="height: 330px; object-fit: cover;">
                                         </div> -->
-                                        <div class="itinerary-split1" style="background-image: url('img/Day 11 & 12.jpg.jpeg'); background-position-y: 0%;">
-                                            <div class="day left">
-                                                <span class="day-label fw-bold fs-5">Day 11</span>
-                                                <p>Drive to Ndutu for 3 Nights.</p>
-                                            </div>
-    
-                                            <div class="day right">
-                                                <span class="day-label fw-bold fs-5">Day 12</span>
-                                                <p>Full Day in Ndutu.</p>
-                                            </div>
+                                    <div class="itinerary-split1"
+                                        style="background-image: url('img/Day 11 & 12.jpg.jpeg'); background-position-y: 0%;">
+                                        <div class="day left">
+                                            <span class="day-label fw-bold fs-5">Day 11</span>
+                                            <p>Drive to Ndutu for 3 Nights.</p>
+                                        </div>
+
+                                        <div class="day right">
+                                            <span class="day-label fw-bold fs-5">Day 12</span>
+                                            <p>Full Day in Ndutu.</p>
                                         </div>
                                     </div>
-                                    <div class="row gx-2 mt-4 mb-4 ">
-                                        <!--  <div class="col-12 text-start">
+                                </div>
+                                <div class="row gx-2 mt-4 mb-4 ">
+                                    <!--  <div class="col-12 text-start">
                                             <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.1s"
                                                 src="img/leopard1.jpeg"
                                                 style="height: 330px; object-fit: cover;">
                                         </div> -->
-                                        <div class="itinerary-split1" style="background-image: url('img/Day 13 & 14.jpg.jpeg'); background-position-y: 30%;">
-                                            <div class="day left">
-                                                <span class="day-label fw-bold fs-5">Day 13</span>
-                                                <p>Full Day in Ndutu.</p>
-                                            </div>
-    
-                                            <div class="day right">
-                                                <span class="day-label fw-bold fs-5">Day 14</span>
-                                                <p>Breakfast at the camp, Drive to the Airport then Fly out From Ndutu Airstrip.</p>
-                                            </div>
+                                    <div class="itinerary-split1"
+                                        style="background-image: url('img/Day 13 & 14.jpg.jpeg'); background-position-y: 30%;">
+                                        <div class="day left">
+                                            <span class="day-label fw-bold fs-5">Day 13</span>
+                                            <p>Full Day in Ndutu.</p>
+                                        </div>
+
+                                        <div class="day right">
+                                            <span class="day-label fw-bold fs-5">Day 14</span>
+                                            <p>Breakfast at the camp, Drive to the Airport then Fly out From Ndutu
+                                                Airstrip.</p>
                                         </div>
                                     </div>
-                                   
+                                </div>
+
                             </div>
-                       
+
 
                         </div>
                         <div id="demo" class="container">
 
-                            <form action="https://formcarry.com/s/ooybzoAsR8Y"
-                            method="POST"
-                            enctype="multipart/form-data">
+                            <form action="https://formcarry.com/s/ooybzoAsR8Y" method="POST"
+                                enctype="multipart/form-data">
                                 <div class="row g-3">
-                            
+
                                     <!-- Tour Name -->
                                     <div class="col-12">
                                         <h2 class="form-label text-center">Book This Tour Package</h2>
                                         <input type="hidden" class="form-control" name="tour_name"
                                             value="Photograph Safari" readonly>
                                     </div>
-                            
+
                                     <!-- Personal Details -->
                                     <div class="col-md-6">
                                         <label class="form-label">Full Name *</label>
                                         <input type="text" class="form-control" name="name" required>
                                     </div>
-                            
+
                                     <div class="col-md-6">
                                         <label class="form-label">Email Address *</label>
                                         <input type="email" class="form-control" name="email" required>
                                     </div>
-                            
+
                                     <div class="col-md-6">
                                         <label class="form-label">Phone / WhatsApp *</label>
                                         <input type="tel" class="form-control" name="phone" required>
                                     </div>
-                            
+
                                     <div class="col-md-6">
                                         <label class="form-label">Country *</label>
                                         <input type="text" class="form-control" name="country" required>
                                     </div>
-                            
+
                                     <!-- Travel Details -->
                                     <div class="col-md-6">
                                         <label class="form-label">Arrival Date *</label>
                                         <input type="date" class="form-control" name="arrival_date" required>
                                     </div>
-                            
+
                                     <div class="col-md-6">
                                         <label class="form-label">Departure Date *</label>
                                         <input type="date" class="form-control" name="departure_date" required>
                                     </div>
-                            
+
                                     <div class="col-md-4">
                                         <label class="form-label">Adults *</label>
-                                        <input type="number" class="form-control" name="adults" min="1" value="2" required>
+                                        <input type="number" class="form-control" name="adults" min="1" value="2"
+                                            required>
                                     </div>
-                            
+
                                     <div class="col-md-4">
                                         <label class="form-label">Children</label>
                                         <input type="number" class="form-control" name="children" min="0" value="0">
                                     </div>
-                            
+
                                     <div class="col-md-4">
                                         <label class="form-label">Accommodation</label>
                                         <select class="form-select" name="accommodation">
@@ -1185,7 +1318,7 @@
                                             <option>Luxury</option>
                                         </select>
                                     </div>
-                            
+
                                     <!-- Airport Pickup -->
                                     <div class="col-md-6">
                                         <label class="form-label">Airport Pickup Required?</label>
@@ -1194,21 +1327,21 @@
                                             <option>No</option>
                                         </select>
                                     </div>
-                            
+
                                     <!-- Flight -->
                                     <div class="col-md-6">
                                         <label class="form-label">Flight Details (Optional)</label>
                                         <input type="text" class="form-control" name="flight"
                                             placeholder="Arrival Flight Number">
                                     </div>
-                            
+
                                     <!-- Requests -->
                                     <div class="col-12">
                                         <label class="form-label">Special Requests</label>
                                         <textarea class="form-control" rows="4" name="message"
                                             placeholder="Dietary requirements, honeymoon, children's ages, special requests..."></textarea>
                                     </div>
-                            
+
                                     <!-- Agreement -->
                                     <div class="col-12">
                                         <div class="form-check">
@@ -1218,14 +1351,14 @@
                                             </label>
                                         </div>
                                     </div>
-                            
+
                                     <!-- Submit -->
                                     <div class="col-12 text-center">
                                         <button type="submit" class="btn btn-primary btn-lg px-5">
                                             Book This Tour
                                         </button>
                                     </div>
-                            
+
                                 </div>
                             </form>
                         </div>
@@ -1404,7 +1537,7 @@
 
 
         <!-- Team Start -->
-      <!--   <div class="container-xxl pt-5 pb-3" style="background-color: #ec4b00;">
+        <!--   <div class="container-xxl pt-5 pb-3" style="background-color: #ec4b00;">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title font1 text-center text-primary fw-normal">Team Members</h5>
@@ -1474,7 +1607,7 @@
 
 
         <!-- Testimonial Start -->
-       <!--  <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <!--  <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
                 <div class="text-center">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
@@ -1610,8 +1743,8 @@
 
         <!--blog-->
 
-         <!-- Footer Start -->
-         <div class="container-fluid  text-light footer pt-5 mt-5 wow fadeIn" style="background-color: #ec4b00;"
+        <!-- Footer Start -->
+        <div class="container-fluid  text-light footer pt-5 mt-5 wow fadeIn" style="background-color: #ec4b00;"
             data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
@@ -1675,7 +1808,7 @@
                 </div>
             </div>
         </div>
-     <!-- Footer End -->
+        <!-- Footer End -->
 
 
         <!-- Back to Top -->
